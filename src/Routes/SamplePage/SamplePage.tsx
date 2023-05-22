@@ -63,11 +63,10 @@ const SamplePage = () => {
           </FlexItem>
           <Divider orientation={{ default: 'vertical' }} style={{ marginLeft: '5px' , marginTop: '20px', marginBottom: '20px'}} />
           <FlexItem style={{ margin: '0px 0 0 0px', height: '150px'}}>
-            <CardBody style={{ display: 'flex', flexDirection: 'column' }}>
+            <CardBody>
                 <p style={{ fontWeight: "bold", fontSize: "25px", marginBottom: '10px'}}>Welcome to Subscription services</p>
-                <p style={{ fontSize: '15px' }}>Empower your buying decisions with data. Subscription services provide reporting that is designed to make your subscription choices data-driven</p>
+                <p style={{ fontSize: '15px', marginRight: '80px' }}>Empower your buying decisions with data. Subscription services provide reporting that is designed to make your subscription choices data-driven</p>
             </CardBody>
-            {/* <CardBody style={{ marginRight: '100px' }}>Empower your buying decisions with data. Subscription services provide reporting that is designed to make your subscription choices data-driven</CardBody> */}
           </FlexItem>
         </Flex>
       </Card>
@@ -75,24 +74,30 @@ const SamplePage = () => {
         <Stack hasGutter>
           <StackItem>
           <Card>
-            <Flex display={{ default: 'inlineFlex' }} style={{ display: 'flex', flexWrap: 'nowrap', alignItems: 'start' }}>
+            <Flex display={{ default: 'inlineFlex' }} style={{ display: 'flex', flexWrap: 'nowrap', alignItems: 'end' }}>
               <FlexItem flex={{ default: 'flex_3' }}>
-                <CardBody style={{ fontWeight: "bold", fontSize: "25px" }}>See all your subscriptions</CardBody>
-                <CardBody style={{ fontWeight: "bold", fontSize: "15px" }}>Register your RHEL systems</CardBody>
-                <CardBody style={{ fontSize: "15px" }}>Get the full value of your RHEL subscriptions, including updates and security patches, through registration</CardBody>
-                <List>
-                  <ListItem>For a guided registration experience, try the <AppLink to="/"> Registration Assistant </AppLink>.</ListItem>
-                  <ListItem>Review registration alternatives and select the best option for your workflow. <AppLink to="/"> Learn more </AppLink>.</ListItem>
-                </List>
-                <CardBody style={{ fontWeight: "bold", fontSize: "15px" }}>Activate Subscriptions Usage</CardBody>
-                <CardBody style={{ fontSize: "15px" }}>
-                  Gain visibility into the usage of your subcriptions against your total capacity over time. Opt in to Subcriptions Usage today! 
-                  <AppLink to="/"> Learn more </AppLink>.
+              <CardBody style={{ fontWeight: "bold", fontSize: "25px" }}>See all your subscriptions</CardBody>
+                <CardBody>
+                  <p style={{ fontWeight: "bold", fontSize: "15px", marginBottom: '10px'}}>Register your RHEL systems</p>
+                  <p style={{ fontSize: '15px', marginBottom: '10px'}}>Get the full value of your RHEL subscriptions, including updates and security patches, through registration</p>
+                  <List>
+                    <ListItem>For a guided registration experience, try the <AppLink to="/"> Registration Assistant</AppLink>.</ListItem>
+                    <ListItem>Review registration alternatives and select the best option for your workflow. <AppLink to="/"> Learn more</AppLink>.</ListItem>
+                  </List>
                 </CardBody>
-                <CardBody style={{ fontWeight: "bold", fontSize: "15px" }}>Get the right usage data</CardBody>
-                <CardBody style={{ fontSize: "15px" }}>
+                <CardBody>
+                  <p style={{ fontWeight: "bold", fontSize: "15px", marginBottom: '10px'}}>Activate Subscriptions Usage</p>
+                  <p style={{ fontSize: '15px' }}>
+                  Gain visibility into the usage of your subcriptions against your total capacity over time. Opt in to Subcriptions Usage today! 
+                  <AppLink to="/"> Learn more</AppLink>.
+                  </p>
+                </CardBody>
+                <CardBody>
+                  <p style={{ fontWeight: "bold", fontSize: "15px", marginBottom: '10px'}}>Get the right usage data</p>
+                  <p style={{ fontSize: '15px' }}>
                   Account-wide usage reporting relies on multiple data streams to power Subscriptions Usage. Make sure that the right data is flowing for accurate reporting. 
-                  <AppLink to="/"> Learn more </AppLink>.
+                  <AppLink to="/"> Learn more</AppLink>.
+                  </p>
                 </CardBody>
               </FlexItem>
               <FlexItem flex={{ default: 'flex_1' }} style={{ marginTop: '30px', height: "100%,", objectFit: 'cover'}}>
