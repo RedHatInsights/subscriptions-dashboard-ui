@@ -19,7 +19,6 @@ const SampleComponent = lazy(
 );
 
 import './sample-page.scss';
-import AppLink from '../../Components/AppLink';
 import TopCard from './TopCard';
 import SubscriptionPortfolio from './SubscriptionPortfolio';
 import Dropdown from './Dropdown';

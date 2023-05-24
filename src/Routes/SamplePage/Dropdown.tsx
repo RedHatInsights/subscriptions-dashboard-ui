@@ -9,6 +9,7 @@ import {
 } from '@patternfly/react-core';
 import './sample-page.scss';
 import AppLink from '../../Components/AppLink';
+import ExternalLinkAltIcon from '@patternfly/react-icons/dist/esm/icons/external-link-alt-icon';
 
 const Dropdown = () => {
     const [expanded, setExpanded] = React.useState('bordered-toggle4')
@@ -56,8 +57,8 @@ const Dropdown = () => {
                       A manifest is a set of encrypted files that contains subscription
                       information that is used to import your subscriptions into Satellite. 
                       After the manifest is imported, you can use it to manage RHEL systems and 
-                      synchronize content. Learn more about using manifests with the <AppLink to="/"> connected </AppLink>
-                      and <AppLink to="/"> disconnected </AppLink> experience.
+                      synchronize content. Learn more about using manifests with the <AppLink to="/"> connected <ExternalLinkAltIcon /></AppLink>
+                      &nbsp;and <AppLink to="/"> disconnected <ExternalLinkAltIcon /></AppLink> &nbsp;experience.
                     </p>
                   </AccordionContent>
                 </AccordionItem>
@@ -76,7 +77,7 @@ const Dropdown = () => {
                     <p>
                       The purchase terms for a subscription determine how a usage is counted. These terms include 
                       a quantity and unit of measurement. Different subscriptions are sold with different terms, so 
-                      usage counting varies across products. <AppLink to="/"> Learn more</AppLink>.
+                      usage counting varies across products. <AppLink to="/"> Learn more <ExternalLinkAltIcon /></AppLink>
                     </p>
                   </AccordionContent>
                 </AccordionItem>
@@ -94,7 +95,7 @@ const Dropdown = () => {
                   <AccordionContent id="bordered-expand4" isHidden={expanded !== 'bordered-toggle4'}>
                     <p>
                       Discover the processes and tools that you can use to manage 
-                      your RHEL subscriptions. <AppLink to="/"> Learn more</AppLink>.
+                      your RHEL subscriptions. <AppLink to="/"> Learn more <ExternalLinkAltIcon /></AppLink>
                     </p>
                   </AccordionContent>
                 </AccordionItem>
