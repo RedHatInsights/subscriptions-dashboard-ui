@@ -18,3 +18,23 @@
 .bottomMargins {
     margin-bottom: 10px;
 }
+
+.topImage {
+    height: 100%; 
+    width: 75px; 
+    object-fit: cover;
+}
+
+.standardImage {
+    height: 100%; 
+    width: 50px; 
+    object-fit: cover;
+    display: block;
+    margin: auto;  
+    margin-bottom: 10px;
+}
+
+.portfolioFlex {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
