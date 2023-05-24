@@ -1,2 +1,20 @@
 // js generates class '.page__{rootClass}' that wraps the content in your page added to the root tag
 // Found in Routes.js as the rootClass
+
+.titleCard {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.headingFont {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.bodyFont {
+    font-size: 15px;
+}
+
+.bottomMargins {
+    margin-bottom: 10px;
+}
