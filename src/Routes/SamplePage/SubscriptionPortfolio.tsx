@@ -52,10 +52,10 @@ const SubscriptionPortfolio = () => {
             </FlexItem>
             <FlexItem flex={{ default: 'flex_1' }}>
                 <Card style={{ textAlign: 'center' }} className='portfolioFlex'>
-                    {/* <Button onClick={() => handleClick(4)} style={{ padding: 0 }}> */}
-                        <PlusCircleIcon className='standardImage' />
+                    <Button onClick={() => handleClick(4)} style={{ background: 'white', padding: 0 }}>
+                        <PlusCircleIcon className='standardImage' style={{ color: 'gray' }}/>
                         <AppLink to="/">View all<br />Red Hat Products</AppLink>
-                    {/* </Button> */}
+                    </Button>
                 </Card>
             </FlexItem>
         </Flex>
