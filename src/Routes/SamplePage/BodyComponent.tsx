@@ -40,7 +40,7 @@ const BodyComponent = () => {
                   </p>
                 </CardBody>
               </FlexItem>
-              <FlexItem flex={{ default: 'flex_2' }} style={{ marginTop: '30px', marginRight: '15px', marginBottom: '15px', height: "100%,", objectFit: 'cover', marginLeft: '0px'}}>
+              <FlexItem flex={{ default: 'flex_2' }} style={{ marginTop: '30px', marginRight: '15px', marginBottom: '15px', height: "100%,", objectFit: 'cover', marginLeft: '0px', padding: '0px'}}>
                 <img src= { require('../../../static/images/subscriptionViewCOPY.png') }></img>
               </FlexItem>
             </Flex>
