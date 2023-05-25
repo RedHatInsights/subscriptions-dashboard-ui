@@ -15,7 +15,7 @@ const BodyComponent = () => {
     return (
         <Card>
             <Flex display={{ default: 'inlineFlex' }} style={{ display: 'flex', flexWrap: 'nowrap', alignItems: 'end' }}>
-              <FlexItem flex={{ default: 'flex_3' }}>
+              <FlexItem flex={{ default: 'flex_4' }} style={{ marginRight: '0', paddingRight: '0', flexBasis: "0"}}>
               <CardBody className='headingFont'>See all your subscriptions</CardBody>
                 <CardBody>
                   <p className='titleCard bottomMargins'>Register your RHEL systems</p>
@@ -40,8 +40,8 @@ const BodyComponent = () => {
                   </p>
                 </CardBody>
               </FlexItem>
-              <FlexItem flex={{ default: 'flex_2' }} style={{ marginTop: '30px', height: "100%,", objectFit: 'cover'}}>
-                <img src= { require('../../../static/images/subscriptionView.png') }></img>
+              <FlexItem flex={{ default: 'flex_2' }} style={{ marginTop: '30px', marginRight: '15px', marginBottom: '15px', height: "100%,", objectFit: 'cover', marginLeft: '0px'}}>
+                <img src= { require('../../../static/images/subscriptionViewCOPY.png') }></img>
               </FlexItem>
             </Flex>
         </Card>
