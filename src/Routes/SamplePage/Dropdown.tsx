@@ -8,7 +8,6 @@ import {
   CardBody,
 } from '@patternfly/react-core';
 import './sample-page.scss';
-import AppLink from '../../Components/AppLink';
 import ExternalLinkAltIcon from '@patternfly/react-icons/dist/esm/icons/external-link-alt-icon';
 import { Link } from 'react-router-dom';
 
