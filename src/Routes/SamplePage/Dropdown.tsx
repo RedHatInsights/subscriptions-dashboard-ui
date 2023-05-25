@@ -25,6 +25,7 @@ const Dropdown = () => {
     return (
         <Card>
             <CardBody className='headingFont'>Have more questions?</CardBody>
+            <div style={{ paddingRight: '10px', paddingLeft: '10px' }}>
             <Accordion isBordered>
             <AccordionItem>
                 <AccordionToggle
@@ -36,7 +37,7 @@ const Dropdown = () => {
                 >
                 How can I see all my subscriptions?
                 </AccordionToggle>
-                <AccordionContent id="bordered-expand1" isHidden={expanded !== 'bordered-toggle1'}>
+                <AccordionContent id="bordered-expand1" isHidden={expanded !== 'bordered-toggle1'} style={{ borderTop: '1px solid gray' }}>
                 <p>
                     View details and status information for each of your subcriptions with <Link to="inventory"> Subscription Inventory</Link>.
                 </p>
@@ -53,7 +54,7 @@ const Dropdown = () => {
                 >
                 What is a manifest?
                 </AccordionToggle>
-                <AccordionContent id="bordered-expand2" isHidden={expanded !== 'bordered-toggle2'}>
+                <AccordionContent id="bordered-expand2" isHidden={expanded !== 'bordered-toggle2'} style={{ borderTop: '1px solid gray' }}>
                 <p>
                     A manifest is a set of encrypted files that contains subscription
                     information that is used to import your subscriptions into Satellite. 
@@ -74,7 +75,7 @@ const Dropdown = () => {
                 >
                 How is Subscription Usage counting the usage of my subscriptions?
                 </AccordionToggle>
-                <AccordionContent id="bordered-expand3" isHidden={expanded !== 'bordered-toggle3'}>
+                <AccordionContent id="bordered-expand3" isHidden={expanded !== 'bordered-toggle3'} style={{ borderTop: '1px solid', borderColor: 'gray' }}>
                 <p>
                     The purchase terms for a subscription determine how a usage is counted. These terms include 
                     a quantity and unit of measurement. Different subscriptions are sold with different terms, so 
@@ -93,7 +94,7 @@ const Dropdown = () => {
                 >
                 How do I prepared to manage my RHEL subscriptions?
                 </AccordionToggle>
-                <AccordionContent id="bordered-expand4" isHidden={expanded !== 'bordered-toggle4'}>
+                <AccordionContent id="bordered-expand4" isHidden={expanded !== 'bordered-toggle4'} style={{ borderTop: '1px solid gray' }}>
                 <p>
                     Discover the processes and tools that you can use to manage 
                     your RHEL subscriptions. <a target='_blank' href="https://access.redhat.com/documentation/en-us/subscription_central/2023/html-single/getting_started_with_rhel_system_registration/index"> Learn more <ExternalLinkAltIcon /></a>
@@ -101,6 +102,7 @@ const Dropdown = () => {
                 </AccordionContent>
             </AccordionItem>
             </Accordion>
+            </div>
         </Card>
     );
 };
