@@ -10,6 +10,7 @@ import {
 import './sample-page.scss';
 import AppLink from '../../Components/AppLink';
 import ExternalLinkAltIcon from '@patternfly/react-icons/dist/esm/icons/external-link-alt-icon';
+import { Link } from 'react-router-dom';
 
 const Dropdown = () => {
     const [expanded, setExpanded] = React.useState('bordered-toggle4')
@@ -37,7 +38,7 @@ const Dropdown = () => {
                 </AccordionToggle>
                 <AccordionContent id="bordered-expand1" isHidden={expanded !== 'bordered-toggle1'}>
                 <p>
-                    View details and status information for each of your subcriptions with <AppLink to="/"> Subscription Inventory</AppLink>.
+                    View details and status information for each of your subcriptions with <Link to="inventory"> Subscription Inventory</Link>.
                 </p>
                 </AccordionContent>
             </AccordionItem>
@@ -57,8 +58,8 @@ const Dropdown = () => {
                     A manifest is a set of encrypted files that contains subscription
                     information that is used to import your subscriptions into Satellite. 
                     After the manifest is imported, you can use it to manage RHEL systems and 
-                    synchronize content. Learn more about using manifests with the <AppLink to="/"> connected <ExternalLinkAltIcon /></AppLink>
-                    &nbsp;and <AppLink to="/"> disconnected <ExternalLinkAltIcon /></AppLink> &nbsp;experience.
+                    synchronize content. Learn more about using manifests with the <a target='_blank' href="https://access.redhat.com/documentation/en-us/subscription_central/2023/html-single/creating_and_managing_manifests_for_a_connected_satellite_server/index#doc-wrapper"> connected <ExternalLinkAltIcon /></a>
+                    &nbsp;and <a target='_blank' href="https://access.redhat.com/documentation/en-us/red_hat_subscription_management/2023/html-single/using_red_hat_subscription_management/index#using_manifests_con"> disconnected <ExternalLinkAltIcon /></a> &nbsp;experience.
                 </p>
                 </AccordionContent>
             </AccordionItem>
@@ -77,7 +78,7 @@ const Dropdown = () => {
                 <p>
                     The purchase terms for a subscription determine how a usage is counted. These terms include 
                     a quantity and unit of measurement. Different subscriptions are sold with different terms, so 
-                    usage counting varies across products. <AppLink to="/"> Learn more <ExternalLinkAltIcon /></AppLink>
+                    usage counting varies across products. <a target='_blank' href="https://access.redhat.com/documentation/en-us/subscription_central/2023/html-single/getting_started_with_the_subscriptions_service/index#assembly-using-subscriptionwatch-data"> Learn more <ExternalLinkAltIcon /></a>
                 </p>
                 </AccordionContent>
             </AccordionItem>
@@ -95,7 +96,7 @@ const Dropdown = () => {
                 <AccordionContent id="bordered-expand4" isHidden={expanded !== 'bordered-toggle4'}>
                 <p>
                     Discover the processes and tools that you can use to manage 
-                    your RHEL subscriptions. <AppLink to="/"> Learn more <ExternalLinkAltIcon /></AppLink>
+                    your RHEL subscriptions. <a target='_blank' href="https://access.redhat.com/documentation/en-us/subscription_central/2023/html-single/getting_started_with_rhel_system_registration/index"> Learn more <ExternalLinkAltIcon /></a>
                 </p>
                 </AccordionContent>
             </AccordionItem>

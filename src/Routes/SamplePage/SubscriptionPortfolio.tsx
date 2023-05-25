@@ -6,9 +6,7 @@ import {
   Button
 } from '@patternfly/react-core';
 import './sample-page.scss';
-import AppLink from '../../Components/AppLink';
 import PlusCircleIcon from '@patternfly/react-icons/dist/esm/icons/plus-circle-icon';
-import { redirect } from 'react-router-dom';
 
 const SubscriptionPortfolio = () => {
 
@@ -26,7 +24,7 @@ const SubscriptionPortfolio = () => {
             </FlexItem>
             <FlexItem flex={{ default: 'flex_1' }}>
                 <Card style={{ textAlign: 'center' }} className='portfolioFlex'>
-                    <a target="_blank" href="hhttps://www.redhat.com/en/technologies/cloud-computing/openshift">
+                    <a target="_blank" href="https://www.redhat.com/en/technologies/cloud-computing/openshift">
                         <Button style={{ background: 'white', padding: 0}}>
                             <img className='standardImage' src= { require('../../../static/images/openshift.jpg') }></img>
                             <a target="_blank" href="https://www.redhat.com/en/technologies/cloud-computing/openshift">Red Hat<br />OpenShift</a>
