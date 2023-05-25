@@ -14,7 +14,7 @@ import ExternalLinkAltIcon from '@patternfly/react-icons/dist/esm/icons/external
 const BodyComponent = () => {
     return (
         <Card>
-            <Flex display={{ default: 'inlineFlex' }} style={{ display: 'flex', flexWrap: 'nowrap', alignItems: 'end' }}>
+            <Flex display={{ default: 'inlineFlex' }} style={{ display: 'flex', alignItems: 'end' }}>
               <FlexItem className='flexBox'>
               <CardBody className='headingFont flexBox'>See all your subscriptions</CardBody>
                 <CardBody style={{ paddingBottom: '0px', paddingTop: '0px' }}>
