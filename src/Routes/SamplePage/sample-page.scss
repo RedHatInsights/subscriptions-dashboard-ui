@@ -47,6 +47,67 @@
 .flexBox {
     margin-right: 0 !important;
     padding-right: 0 !important;
+    flex: 5;
+}
+
+.flexImage {
+    flex: 2;
+    max-height: "100%";
+    max-width: "100%";
+    margin-right: '15px';
+    margin-bottom: '15px';
+    height: "auto,";
+    object-fit: 'cover';
+    margin-left: '10px';
+    padding: '0px';
+}
+
+@media screen and (max-width: 480px) {
+    .flexBox {
+        flex-basis: 100%
+    }
+    .flexImage {
+        flex-basis: 100%;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .flexBox {
+        flex-basis: 50%;
+    }
+    .flexImage {
+        flex-basis: 50%;
+    }
+}
+  
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .flexBox {
+        flex-basis: 33.33%;
+        flex: 4
+    }
+    .flexImage {
+        flex-basis: 33.33%;
+        max-height: 400px;
+        flex: 1;
+    }
+}
+  
+@media screen and (min-width: 1200px) {
+    .flexBox {
+        flex: 4;
+    }
+    .flexImage {
+        flex: 2;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .flexBox {
+        flex: 4;
+    }
+    .flexImage {
+        flex: 1;
+    }
 }
 
 .listItems {
