@@ -17,7 +17,9 @@ const SubscriptionPortfolio = () => {
                     <a className='portfolioFlex' target="_blank" href="https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux">
                         <Button style={{ background: 'white', padding: 0}}>
                             <img className='standardImage' src= { require('../../../static/images/rhel.jpg') }></img>
-                            <a target="_blank" href="https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux">Red Hat<br />Enterprise Linux</a>       
+                            <a target='_blank' href='https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux'>Red Hat</a>
+                            <br />
+                            <a style={{ paddingLeft: '10px', paddingRight: '10px' }} target="_blank" href="https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux">Enterprise Linux</a>       
                         </Button>
                     </a>
                 </Card>
@@ -27,7 +29,9 @@ const SubscriptionPortfolio = () => {
                     <a className='portfolioFlex' target="_blank" href="https://www.redhat.com/en/technologies/cloud-computing/openshift">
                         <Button style={{ background: 'white', padding: 0}}>
                             <img className='standardImage' src= { require('../../../static/images/openshift.jpg') }></img>
-                            <a target="_blank" href="https://www.redhat.com/en/technologies/cloud-computing/openshift">Red Hat<br />OpenShift</a>
+                            <a target='_blank' href='https://www.redhat.com/en/technologies/cloud-computing/openshift'>Red Hat</a>
+                            <br />
+                            <a style={{ paddingLeft: '10px', paddingRight: '10px' }} target="_blank" href="https://www.redhat.com/en/technologies/cloud-computing/openshift">OpenShift</a>
                         </Button>
                     </a>
                 </Card>
@@ -37,7 +41,9 @@ const SubscriptionPortfolio = () => {
                     <a className='portfolioFlex' target='_blank' href='https://www.redhat.com/en/technologies/management/ansible'>
                         <Button style={{ background: 'white', padding: 0}}>
                             <img className='standardImage' src= { require('../../../static/images/ansible.jpg') }></img>
-                            <a target='_blank' href="https://www.redhat.com/en/technologies/management/ansible">Red Hat<br />Ansible Automation Platform</a>
+                            <a target='_blank' href='https://www.redhat.com/en/technologies/management/ansible'>Red Hat</a>
+                            <br />
+                            <a style={{ paddingLeft: '10px', paddingRight: '10px' }} target='_blank' href="https://www.redhat.com/en/technologies/management/ansible">Ansible Automation Platform</a>
                         </Button>
                     </a>
                 </Card>
@@ -47,7 +53,9 @@ const SubscriptionPortfolio = () => {
                     <a className='portfolioFlex' target="_blank" href='https://www.redhat.com/en/technologies/all-products'>
                         <Button style={{ background: 'white', padding: 0 }}>
                             <PlusCircleIcon className='standardImage' style={{ color: 'gray' }}/>
-                            <a target='_blank' href="https://www.redhat.com/en/technologies/all-products">View all<br />Red Hat Products</a>
+                            <a target='_blank' href='https://www.redhat.com/en/technologies/all-products'>View all</a>
+                            <br />
+                            <a style={{ paddingLeft: '10px', paddingRight: '10px' }} target='_blank' href="https://www.redhat.com/en/technologies/all-products">Red Hat Products</a>
                         </Button>
                     </a>
                 </Card>
