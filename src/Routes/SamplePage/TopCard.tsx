@@ -12,10 +12,10 @@ const TopCard = () => {
     return (
       <Card>
         <Flex display={{ default: 'inlineFlex' }} style={{ display: 'flex', flexWrap: 'nowrap', alignItems: 'start' }}>
-          <FlexItem style={{ marginTop: '30px', marginLeft: '20px', marginRight: '5px', flex: '1'}}>
+          <FlexItem className='titleCardLeftFlex'>
             <img className='topImage' src= { require('../../../static/images/subs.png') }></img>
           </FlexItem>
-          <Divider orientation={{ default: 'vertical' }} style={{ margin: '30px 0px 30px 20px' }} />
+          <Divider orientation={{ default: 'vertical' }} className='divider' />
           <FlexItem className='titleCardRightFlex' style={{ flex: '8' }}>
             <CardBody>
                 <p className='headingFont bottomMargins'>Welcome to Subscription Services</p>
