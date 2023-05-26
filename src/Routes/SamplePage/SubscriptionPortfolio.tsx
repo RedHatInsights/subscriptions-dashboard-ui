@@ -11,7 +11,7 @@ import PlusCircleIcon from '@patternfly/react-icons/dist/esm/icons/plus-circle-i
 const SubscriptionPortfolio = () => {
 
     return (
-        <Flex display={{ default: 'inlineFlex' }} style={{ display: 'flex', alignItems: 'start', columnGap: '15px'}}>
+        <Flex display={{ default: 'inlineFlex' }} style={{ display: 'flex', alignItems: 'start', gap: '20px'}}>
             <FlexItem flex={{ default: 'flex_1' }}>
                 <Card style={{ textAlign: 'center' }}>
                     <a className='portfolioFlex' target="_blank" href="https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux">
@@ -42,7 +42,7 @@ const SubscriptionPortfolio = () => {
                     </a>
                 </Card>
             </FlexItem>
-            <FlexItem flex={{ default: 'flex_1' }}>
+            <FlexItem flex={{ default: 'flex_1'}} className='subscriptionCardMargin'>
                 <Card style={{ textAlign: 'center' }}>
                     <a className='portfolioFlex' target="_blank" href='https://www.redhat.com/en/technologies/all-products'>
                         <Button style={{ background: 'white', padding: 0 }}>
