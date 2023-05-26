@@ -69,6 +69,9 @@
     .flexImage {
         flex-basis: 100%;
     }
+    .titleCardRightFlex {
+        margin: 0 0 0 0 !important;
+    }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -77,6 +80,9 @@
     }
     .flexImage {
         flex-basis: 50%;
+    }
+    .titleCardRightFlex {
+        margin: 0 0 0 0 !important;
     }
 }
   
@@ -118,4 +124,8 @@
     display: 'flex';
     flex-wrap: 'nowrap';
     align-items: 'start';
+}
+
+.titleCardRightFlex {
+    margin: 0px 20% 0px 0px;
 }
