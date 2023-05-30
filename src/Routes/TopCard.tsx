@@ -13,7 +13,7 @@ const TopCard = () => {
       <Card>
         <Flex display={{ default: 'inlineFlex' }} style={{ display: 'flex', flexWrap: 'nowrap', alignItems: 'start' }}>
           <FlexItem className='titleCardLeftFlex'>
-            <img className='topImage' src= { require('../../../static/images/subs.png') }></img>
+            <img className='topImage' src= { require('../../static/images/subs.png') }></img>
           </FlexItem>
           <Divider orientation={{ default: 'vertical' }} className='divider' />
           <FlexItem className='titleCardRightFlex' style={{ flex: '8' }}>

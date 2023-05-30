@@ -8,7 +8,7 @@ import {
   ListItem
 } from '@patternfly/react-core';
 import './sample-page.scss';
-import AppLink from '../../Components/AppLink';
+import AppLink from '../Components/AppLink';
 import ExternalLinkAltIcon from '@patternfly/react-icons/dist/esm/icons/external-link-alt-icon';
 
 const BodyComponent = () => {
@@ -41,7 +41,7 @@ const BodyComponent = () => {
                 </CardBody>
               </FlexItem>
               <FlexItem className='flexImage' style={{ maxHeight: "100%", maxWidth: "100%", marginRight: '15px', paddingBottom: '15px', height: "auto,", objectFit: 'cover', marginLeft: '10px', padding: '0px'}}>
-                <img src= { require('../../../static/images/subscriptionViewCOPY.png') }></img>
+                <img src= { require('../../static/images/subscriptionViewCOPY.png') }></img>
               </FlexItem>
             </Flex>
         </Card>
