@@ -5,7 +5,7 @@ import {
   FlexItem,
   Button
 } from '@patternfly/react-core';
-import './sample-page.scss';
+import './Overview.scss';
 import PlusCircleIcon from '@patternfly/react-icons/dist/esm/icons/plus-circle-icon';
 
 const SubscriptionPortfolio = () => {

@@ -6,7 +6,7 @@ import {
     Flex,
     FlexItem,
   } from '@patternfly/react-core';
-import './sample-page.scss';
+import './Overview.scss';
 
 const TopCard = () => {
     return (

@@ -7,7 +7,7 @@ import {
   List,
   ListItem
 } from '@patternfly/react-core';
-import './sample-page.scss';
+import './Overview.scss';
 import AppLink from '../Components/AppLink';
 import ExternalLinkAltIcon from '@patternfly/react-icons/dist/esm/icons/external-link-alt-icon';
 
