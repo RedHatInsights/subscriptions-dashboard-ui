@@ -1,0 +1,59 @@
+---
+apiVersion: v1
+kind: Template
+metadata:
+  name: subscriptions-dashboard-ui
+objects:
+  - apiVersion: cloud.redhat.com/v1alpha1
+    kind: Frontend
+    metadata:
+      name: subscriptions-dashboard
+    spec:
+      envName: ${ENV_NAME}
+      title: Subscriptions Dashboard
+      deploymentRepo: https://github.com/RedHatInsights/subscriptions-dashboard-ui
+      API:
+        versions:
+          - v1
+      frontend:
+        paths:
+          - /apps/subscription-dashboard
+      image: ${IMAGE}:${IMAGE_TAG}
+      navItems:
+        - appId: 'overview',
+          title: 'Overview',
+        - appId: 'subscriptionsInventory'
+          title: 'Subscriptions Inventory'
+        - appId: 'subscriptionsUsage'
+          title: 'Subscriptions Usage'
+          expandable: true
+          permissions:
+            - method: 'isEntitled'
+          routes:
+            - appId: 'rhel'
+              title: 'RHEL'
+              href: '/insights/subscriptions/rhel'
+        - appId: hybridCommittedSpend
+          title: 'Hybrid Committed Spend'
+          expandable: true
+          routes:
+            - appId: 'hybridCommittedSpend'
+              title: 'Hybrid Committed Spend'
+              href: '/business-services/hybrid-committed-spend'
+
+      module:
+        manifestLocation: '/apps/subscriptions-dashboard-ui/fed-mods.json'
+        modules:
+          - id: 'overview'
+            module: './RootApp'
+            routes:
+              - pathname: /subscriptions
+              - pathname: /subscriptions/overview
+
+parameters:
+  - name: ENV_NAME
+    required: true
+  - name: IMAGE_TAG
+    required: true
+  - name: IMAGE
+    value: quay.io/cloudservices/subscriptions-dashboard-ui
