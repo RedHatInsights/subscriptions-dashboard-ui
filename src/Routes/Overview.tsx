@@ -1,22 +1,11 @@
 import React, { Suspense, lazy, useEffect } from 'react';
-import { useDispatch } from 'react-redux';
 
 import {
-  Spinner,
   Stack,
   StackItem,
 } from '@patternfly/react-core';
 
 import { Main } from '@redhat-cloud-services/frontend-components/Main';
-import {
-  PageHeader,
-  PageHeaderTitle,
-} from '@redhat-cloud-services/frontend-components/PageHeader';
-import { addNotification } from '@redhat-cloud-services/frontend-components-notifications/redux';
-
-const SampleComponent = lazy(
-  () => import('../Components/SampleComponent/sample-component')
-);
 
 import './Overview.scss';
 import TopCard from './TopCard';
@@ -32,7 +21,6 @@ import BodyComponent from './BodyComponent';
  * https://medium.com/@thejasonfile/dumb-components-and-smart-components-e7b33a698d43
  */
 const SamplePage = () => {
-  const dispatch = useDispatch();
 
   useEffect(() => {
     insights?.chrome?.appAction?.('sample-page');
@@ -55,11 +43,6 @@ const SamplePage = () => {
           </StackItem>
           <StackItem style={{ marginTop: '10px' }}>
             <Dropdown />
-          </StackItem>
-          <StackItem>
-            <Suspense fallback={<Spinner />}>
-              <SampleComponent />
-            </Suspense>
           </StackItem>
         </Stack>
       </Main>
