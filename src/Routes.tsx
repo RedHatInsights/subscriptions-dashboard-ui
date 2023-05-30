@@ -7,7 +7,7 @@ import { Bullseye, Spinner } from '@patternfly/react-core';
 const SamplePage = lazy(
   () =>
     import(
-      /* webpackChunkName: "SamplePage" */ './Routes/Overview'
+      /* webpackChunkName: "SamplePage" */ './Components/Overview'
     )
 );
 const OopsPage = lazy(

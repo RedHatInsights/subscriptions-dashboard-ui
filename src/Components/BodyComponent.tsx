@@ -8,7 +8,7 @@ import {
   ListItem
 } from '@patternfly/react-core';
 import './Overview.scss';
-import AppLink from '../Components/AppLink';
+import AppLink from './AppLink';
 import ExternalLinkAltIcon from '@patternfly/react-icons/dist/esm/icons/external-link-alt-icon';
 
 const BodyComponent = () => {
