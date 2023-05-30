@@ -36,7 +36,7 @@ const Dropdown = () => {
                         >
                         How can I see all my subscriptions?
                     </AccordionToggle>
-                    <AccordionContent id="bordered-expand1" isHidden={expanded !== 'bordered-toggle1'} className='dropdownItems'>
+                    <AccordionContent id="bordered-expand1" isHidden={expanded !== 'bordered-toggle1'}>
                         <p>
                             View details and status information for each of your subcriptions with <Link to="inventory"> Subscription Inventory</Link>.
                         </p>
@@ -53,7 +53,7 @@ const Dropdown = () => {
                         >
                         What is a manifest?
                     </AccordionToggle>
-                    <AccordionContent id="bordered-expand2" isHidden={expanded !== 'bordered-toggle2'} className='dropdownItems'>
+                    <AccordionContent id="bordered-expand2" isHidden={expanded !== 'bordered-toggle2'}>
                         <p>
                             A manifest is a set of encrypted files that contains subscription
                             information that is used to import your subscriptions into Satellite. 
@@ -74,7 +74,7 @@ const Dropdown = () => {
                         >
                         How is Subscription Usage counting the usage of my subscriptions?
                     </AccordionToggle>
-                    <AccordionContent id="bordered-expand3" isHidden={expanded !== 'bordered-toggle3'} className='dropdownItems'>
+                    <AccordionContent id="bordered-expand3" isHidden={expanded !== 'bordered-toggle3'}>
                         <p>
                             The purchase terms for a subscription determine how a usage is counted. These terms include 
                             a quantity and unit of measurement. Different subscriptions are sold with different terms, so 
@@ -93,7 +93,7 @@ const Dropdown = () => {
                         >
                         How do I prepared to manage my RHEL subscriptions?
                     </AccordionToggle>
-                    <AccordionContent id="bordered-expand4" isHidden={expanded !== 'bordered-toggle4'} className='dropdownItems'>
+                    <AccordionContent id="bordered-expand4" isHidden={expanded !== 'bordered-toggle4'}>
                         <p>
                             Discover the processes and tools that you can use to manage 
                             your RHEL subscriptions. <a target='_blank' href="https://access.redhat.com/documentation/en-us/subscription_central/2023/html-single/getting_started_with_rhel_system_registration/index"> Learn more <ExternalLinkAltIcon /></a>
