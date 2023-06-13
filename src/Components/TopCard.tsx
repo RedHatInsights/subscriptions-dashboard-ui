@@ -5,6 +5,9 @@ import {
     Divider,
     Flex,
     FlexItem,
+    TextContent,
+    Text,
+    TextVariants
   } from '@patternfly/react-core';
 import './Overview.scss';
 
@@ -12,14 +15,16 @@ const TopCard = () => {
     return (
       <Card>
         <Flex display={{ default: 'inlineFlex' }} style={{ display: 'flex', flexWrap: 'nowrap', alignItems: 'start' }}>
-          <FlexItem className='titleCardLeftFlex'>
-            <img className='topImage' src= { require('../../static/images/subs.png') }></img>
+          <FlexItem className='title-card-left-flex'>
+            <img className='top-image' src= { require('../../static/images/subs.png') }></img>
           </FlexItem>
           <Divider orientation={{ default: 'vertical' }} className='divider' />
-          <FlexItem className='titleCardRightFlex' style={{ flex: '8' }}>
+          <FlexItem className='title-card-right-flex' style={{ flex: '8' }}>
             <CardBody>
-                <p className='headingFont bottomMargins'>Welcome to Subscription Services</p>
-                <p className='bodyFont'>Empower your buying decisions with data. Subscription services provide reporting that is designed to make your subscription choices data-driven</p>
+              <TextContent>
+                <Text className='bottom-margins' component={ TextVariants.h1 }>Welcome to Subscription Services</Text>
+                <Text>Empower your buying decisions with data. Subscription services provide reporting that is designed to make your subscription choices data-driven.</Text>
+              </TextContent>
             </CardBody>
           </FlexItem>
         </Flex>

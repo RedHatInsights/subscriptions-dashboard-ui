@@ -3,6 +3,9 @@ import React, { Suspense, lazy, useEffect } from 'react';
 import {
   Stack,
   StackItem,
+  TextContent,
+  Text,
+  TextVariants,
 } from '@patternfly/react-core';
 
 import { Main } from '@redhat-cloud-services/frontend-components/Main';
@@ -20,7 +23,7 @@ import BodyComponent from './BodyComponent';
  * https://reactjs.org/docs/components-and-props.html
  * https://medium.com/@thejasonfile/dumb-components-and-smart-components-e7b33a698d43
  */
-const SamplePage = () => {
+const SubscriptionOverview = () => {
 
   useEffect(() => {
     insights?.chrome?.appAction?.('sample-page');
@@ -35,8 +38,10 @@ const SamplePage = () => {
             <BodyComponent />
           </StackItem>
           <StackItem>
-            <p className='headingFont bottomMargins'>Build your subscription portfolio</p>
-            <p className='bodyFont'>Buy subscriptions for your workloads. We give you data that drives your decisions.</p>
+            <TextContent>
+              <Text component={ TextVariants.h2 }>Build your subscription portfolio</Text>
+              <Text>Buy subscriptions for your workloads. We give you data that drives your decisions.</Text>
+            </TextContent>
           </StackItem>
           <StackItem>
             <SubscriptionPortfolio />
@@ -50,4 +55,4 @@ const SamplePage = () => {
   );
 };
 
-export default SamplePage;
+export default SubscriptionOverview;

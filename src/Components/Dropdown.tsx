@@ -6,6 +6,9 @@ import {
   AccordionToggle,
   Card,
   CardBody,
+  TextContent,
+  Text,
+  TextVariants
 } from '@patternfly/react-core';
 import './Overview.scss';
 import ExternalLinkAltIcon from '@patternfly/react-icons/dist/esm/icons/external-link-alt-icon';
@@ -23,7 +26,11 @@ const Dropdown = () => {
 
     return (
         <Card>
-            <CardBody className='headingFont'>Have more questions?</CardBody>
+            <CardBody>
+                <TextContent>
+                    <Text component={ TextVariants.h2 }>Have more questions?</Text>
+                </TextContent>
+            </CardBody>
             <div style={{ paddingRight: '30px', paddingBottom: '35px'}}>
                 <Accordion isBordered>
                 <AccordionItem>

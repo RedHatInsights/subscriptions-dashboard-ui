@@ -14,9 +14,9 @@ const SubscriptionPortfolio = () => {
         <Flex display={{ default: 'inlineFlex' }} style={{ display: 'flex', alignItems: 'start', gap: '20px'}}>
             <FlexItem flex={{ default: 'flex_1' }}>
                 <Card style={{ textAlign: 'center' }}>
-                    <a className='portfolioFlex' target="_blank" href="https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux">
+                    <a className='portfolio-flex' target="_blank" href="https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux">
                         <Button style={{ background: 'white', padding: 0}}>
-                            <img className='standardImage' src= { require('../../static/images/rhel.jpg') }></img>
+                            <img className='standard-image' src= { require('../../static/images/rhel.jpg') }></img>
                             <a target='_blank' href='https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux'>Red Hat</a>
                             <br />
                             <a style={{ paddingLeft: '10px', paddingRight: '10px' }} target="_blank" href="https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux">Enterprise Linux</a>       
@@ -26,9 +26,9 @@ const SubscriptionPortfolio = () => {
             </FlexItem>
             <FlexItem flex={{ default: 'flex_1' }}>
                 <Card style={{ textAlign: 'center' }}>
-                    <a className='portfolioFlex' target="_blank" href="https://www.redhat.com/en/technologies/cloud-computing/openshift">
+                    <a className='portfolio-flex' target="_blank" href="https://www.redhat.com/en/technologies/cloud-computing/openshift">
                         <Button style={{ background: 'white', padding: 0}}>
-                            <img className='standardImage' src= { require('../../static/images/openshift.jpg') }></img>
+                            <img className='standard-image' src= { require('../../static/images/openshift.jpg') }></img>
                             <a target='_blank' href='https://www.redhat.com/en/technologies/cloud-computing/openshift'>Red Hat</a>
                             <br />
                             <a style={{ paddingLeft: '10px', paddingRight: '10px' }} target="_blank" href="https://www.redhat.com/en/technologies/cloud-computing/openshift">OpenShift</a>
@@ -38,9 +38,9 @@ const SubscriptionPortfolio = () => {
             </FlexItem>
             <FlexItem flex={{ default: 'flex_1' }}>
                 <Card style={{ textAlign: 'center' }}>
-                    <a className='portfolioFlex' target='_blank' href='https://www.redhat.com/en/technologies/management/ansible'>
+                    <a className='portfolio-flex' target='_blank' href='https://www.redhat.com/en/technologies/management/ansible'>
                         <Button style={{ background: 'white', padding: 0}}>
-                            <img className='standardImage' src= { require('../../static/images/ansible.jpg') }></img>
+                            <img className='standard-image' src= { require('../../static/images/ansible.jpg') }></img>
                             <a target='_blank' href='https://www.redhat.com/en/technologies/management/ansible'>Red Hat</a>
                             <br />
                             <a style={{ paddingLeft: '10px', paddingRight: '10px' }} target='_blank' href="https://www.redhat.com/en/technologies/management/ansible">Ansible Automation Platform</a>
@@ -48,11 +48,11 @@ const SubscriptionPortfolio = () => {
                     </a>
                 </Card>
             </FlexItem>
-            <FlexItem flex={{ default: 'flex_1'}} className='subscriptionCardMargin'>
+            <FlexItem flex={{ default: 'flex_1'}} className='subscription-card-margin'>
                 <Card style={{ textAlign: 'center' }}>
-                    <a className='portfolioFlex' target="_blank" href='https://www.redhat.com/en/technologies/all-products'>
+                    <a className='portfolio-flex' target="_blank" href='https://www.redhat.com/en/technologies/all-products'>
                         <Button style={{ background: 'white', padding: 0 }}>
-                            <PlusCircleIcon className='standardImage' style={{ color: 'gray' }}/>
+                            <PlusCircleIcon className='standard-image' style={{ color: 'gray' }}/>
                             <a target='_blank' href='https://www.redhat.com/en/technologies/all-products'>View all</a>
                             <br />
                             <a style={{ paddingLeft: '10px', paddingRight: '10px' }} target='_blank' href="https://www.redhat.com/en/technologies/all-products">Red Hat Products</a>
