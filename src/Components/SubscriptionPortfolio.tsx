@@ -16,7 +16,7 @@ const SubscriptionPortfolio = () => {
                 <Card style={{ textAlign: 'center' }}>
                     <a className='portfolio-flex' target="_blank" href="https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux">
                         <Button style={{ background: 'white', padding: 0}}>
-                            <img className='standard-image' src= { require('../../static/images/rhel.jpg') }></img>
+                            <img className='standard-image' src= { require('../../static/images/rhel.svg') }></img>
                             <a target='_blank' href='https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux'>Red Hat</a>
                             <br />
                             <a style={{ paddingLeft: '10px', paddingRight: '10px' }} target="_blank" href="https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux">Enterprise Linux</a>       
@@ -28,7 +28,7 @@ const SubscriptionPortfolio = () => {
                 <Card style={{ textAlign: 'center' }}>
                     <a className='portfolio-flex' target="_blank" href="https://www.redhat.com/en/technologies/cloud-computing/openshift">
                         <Button style={{ background: 'white', padding: 0}}>
-                            <img className='standard-image' src= { require('../../static/images/openshift.jpg') }></img>
+                            <img className='standard-image' src= { require('../../static/images/openshift.svg') }></img>
                             <a target='_blank' href='https://www.redhat.com/en/technologies/cloud-computing/openshift'>Red Hat</a>
                             <br />
                             <a style={{ paddingLeft: '10px', paddingRight: '10px' }} target="_blank" href="https://www.redhat.com/en/technologies/cloud-computing/openshift">OpenShift</a>
@@ -40,7 +40,7 @@ const SubscriptionPortfolio = () => {
                 <Card style={{ textAlign: 'center' }}>
                     <a className='portfolio-flex' target='_blank' href='https://www.redhat.com/en/technologies/management/ansible'>
                         <Button style={{ background: 'white', padding: 0}}>
-                            <img className='standard-image' src= { require('../../static/images/ansible.jpg') }></img>
+                            <img className='standard-image' src= { require('../../static/images/ansible.svg') }></img>
                             <a target='_blank' href='https://www.redhat.com/en/technologies/management/ansible'>Red Hat</a>
                             <br />
                             <a style={{ paddingLeft: '10px', paddingRight: '10px' }} target='_blank' href="https://www.redhat.com/en/technologies/management/ansible">Ansible Automation Platform</a>
