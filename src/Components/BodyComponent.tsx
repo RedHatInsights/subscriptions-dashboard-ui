@@ -55,7 +55,7 @@ const BodyComponent = () => {
               </CardBody>
             </FlexItem>
             <FlexItem className='flex-image'>
-              <img src= { require('../../static/images/subscriptionViewCOPY.png') }></img>
+              <img src= { require('../../static/images/subscriptionView.svg') }></img>
             </FlexItem>
           </Flex>
       </Card>
