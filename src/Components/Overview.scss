@@ -1,19 +1,29 @@
 // js generates class '.page__{rootClass}' that wraps the content in your page added to the root tag
 // Found in Routes.js as the rootClass
 
-.top-image {
+.top-card__image {
     height: 100%; 
     width: 75px; 
     object-fit: cover;
 }
 
-.standard-image {
+.top-card--flex {
+    display: flex;
+    flex-wrap: nowrap; 
+    align-items: start;
+}
+
+.subscription-portfolio--image-size {
     height: 100%; 
     width: 60px; 
     object-fit: cover;
     display: block;
     margin: auto;  
     margin-bottom: var(--pf-global--spacer--md);
+}
+
+.subscription-portfolio--icon-color {
+    color: gray;
 }
 
 .portfolio-flex {
@@ -60,7 +70,7 @@
         height: auto;
         padding-left: var(--pf-global--spacer--sm);
     }
-    .title-card-right-flex {
+    .top-card--right-flex {
         margin: 0 0 0 0 !important;
     }
     .subscription-card-margin {
@@ -82,7 +92,7 @@
         height: auto;
         padding-left: var(--pf-global--spacer--sm);
     }
-    .title-card-right-flex {
+    .top-card--right-flex {
         margin: 0 0 0 0 !important;
     }
     .subscription-card-margin {
@@ -100,10 +110,10 @@
         max-height: 400px;
         flex: 1;
     }
-    .title-card-right-flex {
+    .top-card--right-flex {
         flex: 10 !important;
     }
-    .divider {
+    .top-card__divider {
         margin: var(--pf-global--spacer--lg) 0px var(--pf-global--spacer--lg) var(--pf-global--spacer--sm) !important; 
     }
 }
@@ -115,7 +125,7 @@
     .flex-image {
         flex: 2;
     }
-    .title-card-right-flex {
+    .top-card--right-flex {
         flex: 12 !important;
     }
 }
@@ -127,7 +137,7 @@
     .flex-image {
         flex: 2;
     }
-    .divider {
+    .top-card__divider {
         margin: var(--pf-global--spacer--lg) 0px var(--pf-global--spacer--lg) 0px !important; 
     }
 }
@@ -136,22 +146,37 @@
     padding-left: var(--pf-global--spacer--lg);
 }
 
+.subscription-portfolio--flex {
+    display: flex;
+    align-items: start;
+    gap: var(--pf-global--spacer--md);
+}
+
+.subscription-portfolio__button {
+    background: white; 
+    padding: 0;
+}
+
+.subscription-portfolio__card {
+    text-align: center;
+}
+
 .subscription-flex {
     display: 'flex';
     flex-wrap: 'nowrap';
     align-items: 'start';
 }
 
-.title-card-left-flex {
+.top-card--left-flex {
     margin: var(--pf-global--spacer--lg) var(--pf-global--spacer--sm) var(--pf-global--spacer--lg) var(--pf-global--spacer--md);
     flex: 1;
 }
 
-.title-card-right-flex {
+.top-card--right-flex {
     margin-right: var(--pf-global--spacer--md);
     flex: 8;
 }
 
-.divider {
+.top-card__divider {
     margin: var(--pf-global--spacer--lg) 0px var(--pf-global--spacer--lg) var(--pf-global--spacer--md);
 }

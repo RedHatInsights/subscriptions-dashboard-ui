@@ -7,19 +7,19 @@ const SubscriptionPortfolio = () => {
   return (
     <Flex
       display={{ default: 'inlineFlex' }}
-      style={{ display: 'flex', alignItems: 'start', gap: '20px' }}
+      className="subscription-portfolio--flex"
     >
       <FlexItem flex={{ default: 'flex_1' }}>
-        <Card style={{ textAlign: 'center' }}>
+        <Card className="subscription-portfolio__card">
           <a
             className="portfolio-flex"
             target="_blank"
             href="https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux"
             rel="noreferrer"
           >
-            <Button style={{ background: 'white', padding: 0 }}>
+            <Button className="subscription-portfolio__button">
               <img
-                className="standard-image"
+                className="subscription-portfolio--image-size"
                 src={require('../../static/images/rhel.svg')}
               ></img>
               <a
@@ -43,16 +43,16 @@ const SubscriptionPortfolio = () => {
         </Card>
       </FlexItem>
       <FlexItem flex={{ default: 'flex_1' }}>
-        <Card style={{ textAlign: 'center' }}>
+        <Card className="subscription-portfolio__card">
           <a
             className="portfolio-flex"
             target="_blank"
             href="https://www.redhat.com/en/technologies/cloud-computing/openshift"
             rel="noreferrer"
           >
-            <Button style={{ background: 'white', padding: 0 }}>
+            <Button className="subscription-portfolio__button">
               <img
-                className="standard-image"
+                className="subscription-portfolio--image-size"
                 src={require('../../static/images/openshift.svg')}
               ></img>
               <a
@@ -76,16 +76,16 @@ const SubscriptionPortfolio = () => {
         </Card>
       </FlexItem>
       <FlexItem flex={{ default: 'flex_1' }}>
-        <Card style={{ textAlign: 'center' }}>
+        <Card className="subscription-portfolio__card">
           <a
             className="portfolio-flex"
             target="_blank"
             href="https://www.redhat.com/en/technologies/management/ansible"
             rel="noreferrer"
           >
-            <Button style={{ background: 'white', padding: 0 }}>
+            <Button className="subscription-portfolio__button">
               <img
-                className="standard-image"
+                className="subscription-portfolio--image-size"
                 src={require('../../static/images/ansible.svg')}
               ></img>
               <a
@@ -112,18 +112,15 @@ const SubscriptionPortfolio = () => {
         flex={{ default: 'flex_1' }}
         className="subscription-card-margin"
       >
-        <Card style={{ textAlign: 'center' }}>
+        <Card className="subscription-portfolio__card">
           <a
             className="portfolio-flex"
             target="_blank"
             href="https://www.redhat.com/en/technologies/all-products"
             rel="noreferrer"
           >
-            <Button style={{ background: 'white', padding: 0 }}>
-              <PlusCircleIcon
-                className="standard-image"
-                style={{ color: 'gray' }}
-              />
+            <Button className="subscription-portfolio__button">
+              <PlusCircleIcon className="subscription-portfolio--image-size subscription-portfolio--icon-color" />
               <a
                 target="_blank"
                 href="https://www.redhat.com/en/technologies/all-products"

@@ -5,10 +5,7 @@ import { InvalidObject } from '@redhat-cloud-services/frontend-components/Invali
 import { Bullseye, Spinner } from '@patternfly/react-core';
 
 const SamplePage = lazy(
-  () =>
-    import(
-      /* webpackChunkName: "SamplePage" */ './Components/Overview'
-    )
+  () => import(/* webpackChunkName: "SamplePage" */ './Components/Overview')
 );
 const OopsPage = lazy(
   () => import(/* webpackChunkName: "OopsPage" */ './Routes/OopsPage/OopsPage')

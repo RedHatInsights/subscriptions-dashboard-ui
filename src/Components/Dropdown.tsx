@@ -31,7 +31,7 @@ const Dropdown = () => {
           <Text component={TextVariants.h2}>Have more questions?</Text>
         </TextContent>
       </CardBody>
-      <div style={{ paddingRight: '30px', paddingBottom: '35px' }}>
+      <div className="pf-u-pr-lg pf-u-pb-lg">
         <Accordion isBordered>
           <AccordionItem>
             <AccordionToggle

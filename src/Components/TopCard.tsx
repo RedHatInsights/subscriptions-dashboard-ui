@@ -14,24 +14,24 @@ import './Overview.scss';
 const TopCard = () => {
   return (
     <Card>
-      <Flex
-        display={{ default: 'inlineFlex' }}
-        style={{ display: 'flex', flexWrap: 'nowrap', alignItems: 'start' }}
-      >
-        <FlexItem className="title-card-left-flex">
+      <Flex display={{ default: 'inlineFlex' }} className="top-card--flex">
+        <FlexItem className="top-card--left-flex">
           <img
-            className="top-image"
+            className="top-card__image"
             src={require('../../static/images/subs.svg')}
           ></img>
         </FlexItem>
-        <Divider orientation={{ default: 'vertical' }} className="divider" />
-        <FlexItem className="title-card-right-flex" style={{ flex: '8' }}>
+        <Divider
+          orientation={{ default: 'vertical' }}
+          className="top-card__divider"
+        />
+        <FlexItem className="top-card--right-flex">
           <CardBody>
             <TextContent>
-              <Text className="bottom-margins" component={TextVariants.h1}>
+              <Text component={TextVariants.h1}>
                 Welcome to Subscription Services
               </Text>
-              <Text>
+              <Text component={TextVariants.p}>
                 Empower your buying decisions with data. Subscription services
                 provide reporting that is designed to make your subscription
                 choices data-driven.

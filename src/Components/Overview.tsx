@@ -50,7 +50,7 @@ const SubscriptionOverview = () => {
           <StackItem>
             <SubscriptionPortfolio />
           </StackItem>
-          <StackItem style={{ marginTop: '10px' }}>
+          <StackItem className="pf-u-mt-sm">
             <Dropdown />
           </StackItem>
         </Stack>
