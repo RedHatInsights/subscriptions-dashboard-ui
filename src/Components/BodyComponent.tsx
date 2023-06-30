@@ -17,8 +17,11 @@ import ExternalLinkAltIcon from '@patternfly/react-icons/dist/esm/icons/external
 const BodyComponent = () => {
   return (
     <Card>
-      <Flex className="body-flex" display={{ default: 'inlineFlex' }}>
-        <FlexItem className="flex-box">
+      <Flex
+        className="body-component__flex"
+        display={{ default: 'inlineFlex' }}
+      >
+        <FlexItem className="body-component--flex-item">
           <CardBody>
             <TextContent>
               <Text component={TextVariants.h2}>
@@ -39,14 +42,7 @@ const BodyComponent = () => {
                 and security patches, through registration.
               </Text>
               <TextList component={TextListVariants.ul}>
-                <TextListItem
-                  style={{
-                    marginTop: '0px',
-                    marginBottom: '0px',
-                    paddingTop: '0px',
-                    paddingBottom: '0px',
-                  }}
-                >
+                <TextListItem className="body-component--text-list-margins">
                   For a guided registration experience, try the{' '}
                   <a
                     target="_blank"
@@ -72,15 +68,7 @@ const BodyComponent = () => {
               </TextList>
             </TextContent>
           </CardBody>
-          <CardBody
-            className="flex-box"
-            style={{
-              marginTop: '0px',
-              marginBottom: '0px',
-              paddingTop: '0px',
-              paddingBottom: '0px',
-            }}
-          >
+          <CardBody className="body-component--flex-item body-component--text-list-margins">
             <TextContent>
               <Text component={TextVariants.h3}>
                 Activate Subscription Usage
@@ -99,7 +87,7 @@ const BodyComponent = () => {
               </Text>
             </TextContent>
           </CardBody>
-          <CardBody className="flex-box pf-u-pt-md">
+          <CardBody className="body-component--flex-item pf-u-pt-md">
             <TextContent>
               <Text component={TextVariants.h3}>Get the right usage data</Text>
               <Text component={TextVariants.p}>
@@ -117,7 +105,7 @@ const BodyComponent = () => {
             </TextContent>
           </CardBody>
         </FlexItem>
-        <FlexItem className="flex-image">
+        <FlexItem className="body-component--image">
           <img src={require('../../static/images/subscriptionView.svg')}></img>
         </FlexItem>
       </Flex>

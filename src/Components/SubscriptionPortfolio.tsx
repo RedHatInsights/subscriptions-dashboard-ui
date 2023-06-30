@@ -12,7 +12,7 @@ const SubscriptionPortfolio = () => {
       <FlexItem flex={{ default: 'flex_1' }}>
         <Card className="subscription-portfolio__card">
           <a
-            className="portfolio-flex"
+            className="subscription-portfolio__card-padding"
             target="_blank"
             href="https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux"
             rel="noreferrer"
@@ -45,7 +45,7 @@ const SubscriptionPortfolio = () => {
       <FlexItem flex={{ default: 'flex_1' }}>
         <Card className="subscription-portfolio__card">
           <a
-            className="portfolio-flex"
+            className="subscription-portfolio__card-padding"
             target="_blank"
             href="https://www.redhat.com/en/technologies/cloud-computing/openshift"
             rel="noreferrer"
@@ -78,7 +78,7 @@ const SubscriptionPortfolio = () => {
       <FlexItem flex={{ default: 'flex_1' }}>
         <Card className="subscription-portfolio__card">
           <a
-            className="portfolio-flex"
+            className="subscription-portfolio__card-padding"
             target="_blank"
             href="https://www.redhat.com/en/technologies/management/ansible"
             rel="noreferrer"
@@ -114,7 +114,7 @@ const SubscriptionPortfolio = () => {
       >
         <Card className="subscription-portfolio__card">
           <a
-            className="portfolio-flex"
+            className="subscription-portfolio__card-padding"
             target="_blank"
             href="https://www.redhat.com/en/technologies/all-products"
             rel="noreferrer"
