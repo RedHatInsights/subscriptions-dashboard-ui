@@ -1,10 +1,10 @@
-import React, { Suspense, lazy, useEffect } from 'react';
+import React, { useEffect } from 'react';
 
 import {
   Stack,
   StackItem,
-  TextContent,
   Text,
+  TextContent,
   TextVariants,
 } from '@patternfly/react-core';
 
@@ -24,7 +24,6 @@ import BodyComponent from './BodyComponent';
  * https://medium.com/@thejasonfile/dumb-components-and-smart-components-e7b33a698d43
  */
 const SubscriptionOverview = () => {
-
   useEffect(() => {
     insights?.chrome?.appAction?.('sample-page');
   }, []);
@@ -39,8 +38,13 @@ const SubscriptionOverview = () => {
           </StackItem>
           <StackItem>
             <TextContent>
-              <Text component={ TextVariants.h2 }>Build your subscription portfolio</Text>
-              <Text>Buy subscriptions for your workloads. We give you data that drives your decisions.</Text>
+              <Text component={TextVariants.h2}>
+                Build your subscription portfolio
+              </Text>
+              <Text>
+                Buy subscriptions for your workloads. We give you data that
+                drives your decisions.
+              </Text>
             </TextContent>
           </StackItem>
           <StackItem>
