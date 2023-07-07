@@ -10,16 +10,14 @@ import {
   TextVariants,
 } from '@patternfly/react-core';
 import './Overview.scss';
+import SubsIcon from '../../static/images/subs.svg';
 
 const TopCard = () => {
   return (
     <Card>
       <Flex display={{ default: 'inlineFlex' }} className="top-card--flex">
         <FlexItem className="top-card--left-flex">
-          <img
-            className="top-card__image"
-            src={require('../../static/images/subs.svg')}
-          ></img>
+          <img className="top-card__image" src={SubsIcon}></img>
         </FlexItem>
         <Divider
           orientation={{ default: 'vertical' }}

@@ -217,6 +217,11 @@
 
 .subscription-portfolio__card {
   text-align: center;
+  a {
+    span {
+      color: var(--pf-global--link--Color);
+    }
+  }
 }
 
 .subscription-flex {

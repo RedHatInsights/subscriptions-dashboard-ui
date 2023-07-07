@@ -11,7 +11,7 @@ import {
   TextVariants,
 } from '@patternfly/react-core';
 import './Overview.scss';
-import ExternalLinkAltIcon from '@patternfly/react-icons/dist/esm/icons/external-link-alt-icon';
+import ExternalLinkAltIcon from '@patternfly/react-icons/dist/js/icons/external-link-alt-icon';
 import { Link } from 'react-router-dom';
 
 const Dropdown = () => {

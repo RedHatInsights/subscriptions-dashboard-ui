@@ -12,7 +12,8 @@ import {
   TextVariants,
 } from '@patternfly/react-core';
 import './Overview.scss';
-import ExternalLinkAltIcon from '@patternfly/react-icons/dist/esm/icons/external-link-alt-icon';
+import ExternalLinkAltIcon from '@patternfly/react-icons/dist/js/icons/external-link-alt-icon';
+import SubsIcon from '../../static/images/subscriptionView.svg';
 
 const BodyComponent = () => {
   return (
@@ -106,7 +107,7 @@ const BodyComponent = () => {
           </CardBody>
         </FlexItem>
         <FlexItem className="body-component--image">
-          <img src={require('../../static/images/subscriptionView.svg')}></img>
+          <img src={SubsIcon}></img>
         </FlexItem>
       </Flex>
     </Card>

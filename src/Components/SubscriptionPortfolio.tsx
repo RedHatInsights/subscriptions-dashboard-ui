@@ -1,7 +1,39 @@
 import React from 'react';
 import { Button, Card, Flex, FlexItem } from '@patternfly/react-core';
 import './Overview.scss';
-import PlusCircleIcon from '@patternfly/react-icons/dist/esm/icons/plus-circle-icon';
+import PlusCircleIcon from '@patternfly/react-icons/dist/js/icons/plus-circle-icon';
+
+import RHELIcon from '../../static/images/rhel.svg';
+import OpenShiftIcon from '../../static/images/openshift.svg';
+import AnsibleIcon from '../../static/images/ansible.svg';
+
+const PortfolioCard = ({
+  href,
+  src,
+  product,
+}: {
+  product: string;
+  src: string;
+  href: string;
+}) => (
+  <FlexItem flex={{ default: 'flex_1' }}>
+    <Card className="subscription-portfolio__card">
+      <a
+        className="subscription-portfolio__card-padding"
+        target="_blank"
+        href={href}
+        rel="noreferrer"
+      >
+        <Button className="subscription-portfolio__button">
+          <img className="subscription-portfolio--image-size" src={src}></img>
+          <span>Red Hat</span>
+          <br />
+          <span className="pf-u-pl-md pf-u-pr-md">{product}</span>
+        </Button>
+      </a>
+    </Card>
+  </FlexItem>
+);
 
 const SubscriptionPortfolio = () => {
   return (
@@ -9,105 +41,21 @@ const SubscriptionPortfolio = () => {
       display={{ default: 'inlineFlex' }}
       className="subscription-portfolio--flex"
     >
-      <FlexItem flex={{ default: 'flex_1' }}>
-        <Card className="subscription-portfolio__card">
-          <a
-            className="subscription-portfolio__card-padding"
-            target="_blank"
-            href="https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux"
-            rel="noreferrer"
-          >
-            <Button className="subscription-portfolio__button">
-              <img
-                className="subscription-portfolio--image-size"
-                src={require('../../static/images/rhel.svg')}
-              ></img>
-              <a
-                target="_blank"
-                href="https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux"
-                rel="noreferrer"
-              >
-                Red Hat
-              </a>
-              <br />
-              <a
-                className="pf-u-pl-md pf-u-pr-md"
-                target="_blank"
-                href="https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux"
-                rel="noreferrer"
-              >
-                Enterprise Linux
-              </a>
-            </Button>
-          </a>
-        </Card>
-      </FlexItem>
-      <FlexItem flex={{ default: 'flex_1' }}>
-        <Card className="subscription-portfolio__card">
-          <a
-            className="subscription-portfolio__card-padding"
-            target="_blank"
-            href="https://www.redhat.com/en/technologies/cloud-computing/openshift"
-            rel="noreferrer"
-          >
-            <Button className="subscription-portfolio__button">
-              <img
-                className="subscription-portfolio--image-size"
-                src={require('../../static/images/openshift.svg')}
-              ></img>
-              <a
-                target="_blank"
-                href="https://www.redhat.com/en/technologies/cloud-computing/openshift"
-                rel="noreferrer"
-              >
-                Red Hat
-              </a>
-              <br />
-              <a
-                className="pf-u-pl-md pf-u-pr-md"
-                target="_blank"
-                href="https://www.redhat.com/en/technologies/cloud-computing/openshift"
-                rel="noreferrer"
-              >
-                OpenShift
-              </a>
-            </Button>
-          </a>
-        </Card>
-      </FlexItem>
-      <FlexItem flex={{ default: 'flex_1' }}>
-        <Card className="subscription-portfolio__card">
-          <a
-            className="subscription-portfolio__card-padding"
-            target="_blank"
-            href="https://www.redhat.com/en/technologies/management/ansible"
-            rel="noreferrer"
-          >
-            <Button className="subscription-portfolio__button">
-              <img
-                className="subscription-portfolio--image-size"
-                src={require('../../static/images/ansible.svg')}
-              ></img>
-              <a
-                target="_blank"
-                href="https://www.redhat.com/en/technologies/management/ansible"
-                rel="noreferrer"
-              >
-                Red Hat
-              </a>
-              <br />
-              <a
-                className="pf-u-pl-md pf-u-pr-md"
-                target="_blank"
-                href="https://www.redhat.com/en/technologies/management/ansible"
-                rel="noreferrer"
-              >
-                Ansible Automation Platform
-              </a>
-            </Button>
-          </a>
-        </Card>
-      </FlexItem>
+      <PortfolioCard
+        href="https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux"
+        src={RHELIcon}
+        product="Enterprise Linux"
+      />
+      <PortfolioCard
+        href="https://www.redhat.com/en/technologies/cloud-computing/openshift"
+        src={OpenShiftIcon}
+        product="OpenShift"
+      />
+      <PortfolioCard
+        href="https://www.redhat.com/en/technologies/management/ansible"
+        src={AnsibleIcon}
+        product="Ansible Automation Platform"
+      />
       <FlexItem
         flex={{ default: 'flex_1' }}
         className="subscription-card-margin"
@@ -121,22 +69,9 @@ const SubscriptionPortfolio = () => {
           >
             <Button className="subscription-portfolio__button">
               <PlusCircleIcon className="subscription-portfolio--image-size subscription-portfolio--icon-color" />
-              <a
-                target="_blank"
-                href="https://www.redhat.com/en/technologies/all-products"
-                rel="noreferrer"
-              >
-                View all
-              </a>
+              <span>View all</span>
               <br />
-              <a
-                className="pf-u-pl-md pf-u-pr-md"
-                target="_blank"
-                href="https://www.redhat.com/en/technologies/all-products"
-                rel="noreferrer"
-              >
-                Red Hat Products
-              </a>
+              <span className="pf-u-pl-md pf-u-pr-md">Red Hat Products</span>
             </Button>
           </a>
         </Card>
