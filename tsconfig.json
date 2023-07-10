@@ -20,7 +20,8 @@
   },
   "include": [
     "./src/**/*.ts",
-    "./src/**/*.tsx"
+    "./src/**/*.tsx",
+    "./static/**/*.svg"
   ],
   "exclude": [
     "./src/entry.ts",
