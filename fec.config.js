@@ -1,5 +1,5 @@
 module.exports = {
-  appUrl: '/staging/starter',
+  appUrl: '/subscriptions/overview',
   debug: true,
   useProxy: true,
   proxyVerbose: true,
