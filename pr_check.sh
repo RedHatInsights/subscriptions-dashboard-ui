@@ -11,12 +11,6 @@ export WORKSPACE=${WORKSPACE:-$APP_ROOT} # if running in jenkins, use the build'
 export APP_ROOT=$(pwd)
 COMMON_BUILDER=https://raw.githubusercontent.com/RedHatInsights/insights-frontend-builder-common/master
 
-# --------------------------------------------
-# Options that must be configured by app owner
-# --------------------------------------------
-IQE_PLUGINS=""
-IQE_MARKER_EXPRESSION="smoke"
-IQE_FILTER_EXPRESSION=""
 
 set -exv
 # source is preferred to | bash -s in this case to avoid a subshell
