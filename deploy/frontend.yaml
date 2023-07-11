@@ -7,7 +7,7 @@ objects:
   - apiVersion: cloud.redhat.com/v1alpha1
     kind: Frontend
     metadata:
-      name: subscriptions-dashboard
+      name: subscriptions-dashboard-ui
     spec:
       envName: ${ENV_NAME}
       title: Subscriptions Dashboard
@@ -17,11 +17,11 @@ objects:
           - v1
       frontend:
         paths:
-          - /apps/subscription-dashboard
+          - /apps/subscriptions-dashboard-ui
       image: ${IMAGE}:${IMAGE_TAG}
       navItems:
-        - appId: 'overview',
-          title: 'Overview',
+        - appId: 'subscriptionsDashboardUi'
+          title: 'Overview'
         - appId: 'subscriptionsInventory'
           title: 'Subscriptions Inventory'
         - appId: 'subscriptionsUsage'
@@ -44,7 +44,7 @@ objects:
       module:
         manifestLocation: '/apps/subscriptions-dashboard-ui/fed-mods.json'
         modules:
-          - id: 'overview'
+          - id: 'subscriptionsDashboardUi'
             module: './RootApp'
             routes:
               - pathname: /subscriptions
