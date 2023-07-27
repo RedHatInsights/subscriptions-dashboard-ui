@@ -3,6 +3,7 @@ module.exports = {
   debug: true,
   useProxy: true,
   proxyVerbose: true,
+  sassPrefix: '.subscriptions-dashboard-ui, .subscriptionsDashboardUi',
   /**
    * Change to false after your app is registered in configuration files
    */
