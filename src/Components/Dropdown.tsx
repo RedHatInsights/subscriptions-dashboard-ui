@@ -49,7 +49,7 @@ const Dropdown = () => {
             >
               <p>
                 View details and status information for each of your
-                subcriptions with{' '}
+                subscriptions with{' '}
                 <Link to="inventory"> Subscription Inventory</Link>.
               </p>
             </AccordionContent>
@@ -112,7 +112,7 @@ const Dropdown = () => {
               isHidden={expanded !== 'bordered-toggle3'}
             >
               <p>
-                The purchase terms for a subscription determine how a usage is
+                The purchase terms for a subscription determine how usage is
                 counted. These terms include a quantity and unit of measurement.
                 Different subscriptions are sold with different terms, so usage
                 counting varies across products.{' '}
@@ -136,14 +136,14 @@ const Dropdown = () => {
               isExpanded={expanded === 'bordered-toggle4'}
               id="bordered-toggle4"
             >
-              How do I prepared to manage my RHEL subscriptions?
+              How do I prepare to manage my RHEL subscriptions?
             </AccordionToggle>
             <AccordionContent
               id="bordered-expand4"
               isHidden={expanded !== 'bordered-toggle4'}
             >
               <p>
-                Discover the processes and tools that you can use to manage your
+                Discover the processes and tools that are used to manage your
                 RHEL subscriptions.{' '}
                 <a
                   target="_blank"

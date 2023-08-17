@@ -75,9 +75,9 @@ const BodyComponent = () => {
                 Activate Subscription Usage
               </Text>
               <Text component={TextVariants.p}>
-                Gain visibility into the usage of your subcriptions against your
-                total capacity over time. Opt in to Subcriptions Usage today!
-                &nbsp;
+                Gain visibility into the usage of your subscriptions against
+                your total capacity over time. Opt in to Subscriptions Usage
+                today! &nbsp;
                 <a
                   target="_blank"
                   href="https://access.redhat.com/documentation/en-us/subscription_central/2023/html-single/getting_started_with_the_subscriptions_service/index#assembly-activating-opening-subscriptionwatch"
@@ -93,7 +93,7 @@ const BodyComponent = () => {
               <Text component={TextVariants.h3}>Get the right usage data</Text>
               <Text component={TextVariants.p}>
                 Account-wide usage reporting relies on multiple data streams to
-                power Subscription Usage. Make sure that the right data is
+                power Subscriptions Usage. Make sure that the right data is
                 flowing for accurate reporting. &nbsp;
                 <a
                   target="_blank"
