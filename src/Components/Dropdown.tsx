@@ -15,7 +15,7 @@ import ExternalLinkAltIcon from '@patternfly/react-icons/dist/js/icons/external-
 import { Link } from 'react-router-dom';
 
 const Dropdown = () => {
-  const [expanded, setExpanded] = React.useState('bordered-toggle4');
+  const [expanded, setExpanded] = React.useState('bordered-toggle1');
   const onToggle = (id: string) => {
     if (id == expanded) {
       setExpanded('');
