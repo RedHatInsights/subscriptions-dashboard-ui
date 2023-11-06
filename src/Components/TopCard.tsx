@@ -27,7 +27,7 @@ const TopCard = () => {
           <CardBody>
             <TextContent>
               <Text component={TextVariants.h1}>
-                Welcome to Subscription Services
+                Welcome to Subscriptions Services
               </Text>
               <Text component={TextVariants.p}>
                 Empower your buying decisions with data. Subscription services

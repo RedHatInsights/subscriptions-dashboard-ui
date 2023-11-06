@@ -27,7 +27,7 @@ const SubscriptionOverview = () => (
         <StackItem>
           <TextContent>
             <Text component={TextVariants.h2}>
-              Build your subscription portfolio
+              Build your subscriptions portfolio
             </Text>
             <Text>
               Buy subscriptions for your workloads. We give you data that drives
