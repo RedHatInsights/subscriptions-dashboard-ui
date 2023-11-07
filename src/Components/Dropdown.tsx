@@ -50,7 +50,12 @@ const Dropdown = () => {
               <p>
                 View details and status information for each of your
                 subscriptions with{' '}
-                <Link to={window.location.href.replace('overview', 'inventory')}> Subscription Inventory</Link>.
+                <Link
+                  to={window.location.href.replace('overview', 'inventory')}
+                >
+                  Subscription Inventory
+                </Link>
+                .
               </p>
             </AccordionContent>
           </AccordionItem>
