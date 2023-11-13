@@ -12,9 +12,10 @@ import {
 } from '@patternfly/react-core';
 import './Overview.scss';
 import ExternalLinkAltIcon from '@patternfly/react-icons/dist/js/icons/external-link-alt-icon';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Dropdown = () => {
+  const { pathname } = useLocation();
   const [expanded, setExpanded] = React.useState('bordered-toggle1');
   const onToggle = (id: string) => {
     if (id == expanded) {
@@ -50,7 +51,10 @@ const Dropdown = () => {
               <p>
                 View details and status information for each of your
                 subscriptions with{' '}
-                <Link to="inventory"> Subscription Inventory</Link>.
+                <Link to={pathname.replace('overview', 'inventory')}>
+                  Subscription Inventory
+                </Link>
+                .
               </p>
             </AccordionContent>
           </AccordionItem>
