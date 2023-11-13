@@ -51,9 +51,7 @@ const Dropdown = () => {
               <p>
                 View details and status information for each of your
                 subscriptions with{' '}
-                <Link
-                  to={pathname.replace('overview', 'inventory')}
-                >
+                <Link to={pathname.replace('overview', 'inventory')}>
                   Subscription Inventory
                 </Link>
                 .
