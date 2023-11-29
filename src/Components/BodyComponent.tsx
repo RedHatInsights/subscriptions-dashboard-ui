@@ -72,7 +72,7 @@ const BodyComponent = () => {
           <CardBody className="body-component--flex-item body-component--text-list-margins">
             <TextContent>
               <Text component={TextVariants.h3}>
-                Activate Subscription Usage
+                Activate Subscriptions Usage
               </Text>
               <Text component={TextVariants.p}>
                 Gain visibility into the usage of your subcriptions against your
