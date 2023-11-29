@@ -30,7 +30,7 @@ const TopCard = () => {
                 Welcome to Subscription Services
               </Text>
               <Text component={TextVariants.p}>
-                Empower your buying decisions with data. Subscription services
+                Empower your buying decisions with data. Subscription Services
                 provide reporting that is designed to make your subscription
                 choices data-driven.
               </Text>
