@@ -52,7 +52,7 @@ const Dropdown = () => {
                 View details and status information for each of your
                 subscriptions with{' '}
                 <Link to={pathname.replace('overview', 'inventory')}>
-                  Subscription Inventory
+                  Subscriptions Inventory
                 </Link>
                 .
               </p>
@@ -109,7 +109,7 @@ const Dropdown = () => {
               isExpanded={expanded === 'bordered-toggle3'}
               id="bordered-toggle3"
             >
-              How is Subscription Usage counting the usage of my subscriptions?
+              How is Subscriptions Usage counting the usage of my subscriptions?
             </AccordionToggle>
             <AccordionContent
               id="bordered-expand3"
