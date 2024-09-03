@@ -19,7 +19,7 @@
   object-fit: cover;
   display: block;
   margin: auto;  
-  margin-bottom: var(--pf-global--spacer--md);
+  margin-bottom: var(--pf-v5-global--spacer--md);
 }
 
 .subscription-portfolio--icon-color {
@@ -27,8 +27,8 @@
 }
 
 .subscription-portfolio__card-padding {
-  padding-top: var(--pf-global--spacer--md);
-  padding-bottom: var(--pf-global--spacer--md);
+  padding-top: var(--pf-v5-global--spacer--md);
+  padding-bottom: var(--pf-v5-global--spacer--md);
 }
 
 .body-component--flex-item {
@@ -54,12 +54,12 @@
   flex: 2;
   max-height: "100%";
   max-width: "100%";
-  margin-right: var(--pf-global--spacer--md);
-  margin-bottom: var(--pf-global--spacer--md);
+  margin-right: var(--pf-v5-global--spacer--md);
+  margin-bottom: var(--pf-v5-global--spacer--md);
   height: "100%";
   width: "100%";
   object-fit: 'cover';
-  margin-left: var(--pf-global--spacer--sm);
+  margin-left: var(--pf-v5-global--spacer--sm);
   padding: '0px';
 }
 
@@ -69,19 +69,19 @@
     align-items: start;
   }
   .body-component--flex-item {
-    margin-right: var(--pf-global--spacer--sm);
-    padding-right: var(--pf-global--spacer--sm);
+    margin-right: var(--pf-v5-global--spacer--sm);
+    padding-right: var(--pf-v5-global--spacer--sm);
   }
   .body-component--image {
     width: 75%;
     height: auto;
-    padding-left: var(--pf-global--spacer--sm);
+    padding-left: var(--pf-v5-global--spacer--sm);
   }
   .top-card--right-flex {
     margin: 0 0 0 0 !important;
   }
   .subscription-card-margin {
-    margin-right: var(--pf-global--spacer--md);
+    margin-right: var(--pf-v5-global--spacer--md);
   }
 }
 
@@ -91,19 +91,19 @@
     align-items: start;
   }
   .body-component--flex-item {
-    margin-right: var(--pf-global--spacer--xs);
-    padding-right: var(--pf-global--spacer--xs);
+    margin-right: var(--pf-v5-global--spacer--xs);
+    padding-right: var(--pf-v5-global--spacer--xs);
   }
   .body-component--image {
     width: 85%;
     height: auto;
-    padding-left: var(--pf-global--spacer--sm);
+    padding-left: var(--pf-v5-global--spacer--sm);
   }
   .top-card--right-flex {
     margin: 0 0 0 0 !important;
   }
   .subscription-card-margin {
-    margin-right: var(--pf-global--spacer--md);
+    margin-right: var(--pf-v5-global--spacer--md);
   }
 }
   
@@ -121,7 +121,7 @@
     flex: 10 !important;
   }
   .top-card__divider {
-    margin: var(--pf-global--spacer--lg) 0px var(--pf-global--spacer--lg) var(--pf-global--spacer--sm) !important; 
+    margin: var(--pf-v5-global--spacer--lg) 0px var(--pf-v5-global--spacer--lg) var(--pf-v5-global--spacer--sm) !important; 
   }
 }
 
@@ -139,7 +139,7 @@
       flex: 12 !important;
     }
     .top-card__divider {
-      margin: var(--pf-global--spacer--lg) 0px var(--pf-global--spacer--lg) var(--pf-global--spacer--sm) !important; 
+      margin: var(--pf-v5-global--spacer--lg) 0px var(--pf-v5-global--spacer--lg) var(--pf-v5-global--spacer--sm) !important; 
     }
   }
   
@@ -163,7 +163,7 @@
     flex: 2;
   }
   .top-card__divider {
-    margin: var(--pf-global--spacer--lg) 0px var(--pf-global--spacer--lg) 0px !important; 
+    margin: var(--pf-v5-global--spacer--lg) 0px var(--pf-v5-global--spacer--lg) 0px !important; 
   }
   .top-card--right-flex {
     flex: 13 !important;
@@ -178,7 +178,7 @@
       flex: 2;
     }
     .top-card__divider {
-      margin: var(--pf-global--spacer--lg) 0px var(--pf-global--spacer--lg) 0px !important; 
+      margin: var(--pf-v5-global--spacer--lg) 0px var(--pf-v5-global--spacer--lg) 0px !important; 
     }
     .top-card--right-flex {
         flex: 14 !important;
@@ -193,7 +193,7 @@
       flex: 2;
     }
     .top-card__divider {
-      margin: var(--pf-global--spacer--lg) 0px var(--pf-global--spacer--lg) 0px !important; 
+      margin: var(--pf-v5-global--spacer--lg) 0px var(--pf-v5-global--spacer--lg) 0px !important; 
     }
     .top-card--right-flex {
         flex: 16 !important;
@@ -201,13 +201,13 @@
   }
 
 .list-items {
-  padding-left: var(--pf-global--spacer--lg);
+  padding-left: var(--pf-v5-global--spacer--lg);
 }
 
 .subscription-portfolio--flex {
   display: flex;
   align-items: start;
-  gap: var(--pf-global--spacer--md);
+  gap: var(--pf-v5-global--spacer--md);
 }
 
 .subscription-portfolio__button {
@@ -219,7 +219,7 @@
   text-align: center;
   a {
     span {
-      color: var(--pf-global--link--Color);
+      color: var(--pf-v5-global--link--Color);
     }
   }
 }
@@ -231,15 +231,15 @@
 }
 
 .top-card--left-flex {
-  margin: var(--pf-global--spacer--lg) var(--pf-global--spacer--sm) var(--pf-global--spacer--lg) var(--pf-global--spacer--md);
+  margin: var(--pf-v5-global--spacer--lg) var(--pf-v5-global--spacer--sm) var(--pf-v5-global--spacer--lg) var(--pf-v5-global--spacer--md);
   flex: 1;
 }
 
 .top-card--right-flex {
-  margin-right: var(--pf-global--spacer--md);
+  margin-right: var(--pf-v5-global--spacer--md);
   flex: 8;
 }
 
 .top-card__divider {
-  margin: var(--pf-global--spacer--lg) 0px var(--pf-global--spacer--lg) var(--pf-global--spacer--md);
+  margin: var(--pf-v5-global--spacer--lg) 0px var(--pf-v5-global--spacer--lg) var(--pf-v5-global--spacer--md);
 }
