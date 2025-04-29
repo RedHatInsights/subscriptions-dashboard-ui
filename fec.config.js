@@ -1,9 +1,12 @@
+const path = require('path');
+
 module.exports = {
   appUrl: '/subscriptions/overview',
   debug: true,
   useProxy: true,
   proxyVerbose: true,
   sassPrefix: '.subscriptions-dashboard-ui, .subscriptionsDashboardUi',
+  frontendCRDPath: path.resolve(__dirname, './deploy/frontend.yaml'),
   /**
    * Change to false after your app is registered in configuration files
    */
