@@ -43,6 +43,7 @@ objects:
       searchEntries:
         - id: subscriptions-dashboard-ui
           title: Subscriptions Dashboard
+          description: Dashboard for all of your cloud.redhat.com subscriptions
           href: "/subscriptions/overview"
 
 parameters:
