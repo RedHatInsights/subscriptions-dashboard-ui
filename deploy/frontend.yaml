@@ -30,7 +30,7 @@ objects:
             routes:
               - pathname: /subscriptions
               - pathname: /subscriptions/overview
-        bundleSegments:
+      bundleSegments:
         - segmentId: subscriptions-dashboard-ui
           bundleId: subscriptions
           navItems:
