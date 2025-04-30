@@ -40,7 +40,7 @@ objects:
               icon: SubscriptionsIcon
           position: 300
 
-        searchEntries:
+      searchEntries:
         - id: subscriptions-dashboard-ui
           title: Subscriptions Dashboard
           href: "/subscriptions/overview"
