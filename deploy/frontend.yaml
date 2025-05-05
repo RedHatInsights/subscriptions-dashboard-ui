@@ -1,3 +1,4 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/RedHatInsights/frontend-components/refs/heads/master/packages/config-utils/src/feo/spec/frontend-crd.schema.json
 ---
 apiVersion: v1
 kind: Template
@@ -11,6 +12,7 @@ objects:
     spec:
       envName: ${ENV_NAME}
       title: Subscriptions Dashboard
+      feoConfigEnabled: true
       deploymentRepo: https://github.com/RedHatInsights/subscriptions-dashboard-ui
       API:
         versions:
@@ -19,36 +21,30 @@ objects:
         paths:
           - /apps/subscriptions-dashboard-ui
       image: ${IMAGE}:${IMAGE_TAG}
-      navItems:
-        - appId: 'subscriptionsDashboardUi'
-          title: 'Overview'
-        - appId: 'subscriptionsInventory'
-          title: 'Subscriptions Inventory'
-        - appId: 'subscriptionsUsage'
-          title: 'Subscriptions Usage'
-          expandable: true
-          permissions:
-            - method: 'isEntitled'
-          routes:
-            - appId: 'rhel'
-              title: 'RHEL'
-              href: '/insights/subscriptions/rhel'
-        - appId: hybridCommittedSpend
-          title: 'Hybrid Committed Spend'
-          expandable: true
-          routes:
-            - appId: 'hybridCommittedSpend'
-              title: 'Hybrid Committed Spend'
-              href: '/business-services/hybrid-committed-spend'
-
       module:
         manifestLocation: '/apps/subscriptions-dashboard-ui/fed-mods.json'
+        defaultDocumentTitle: Subscription Dashboard | Subscription Dashboard
         modules:
-          - id: 'subscriptionsDashboardUi'
+          - id: subscriptions-dashboard-ui
             module: './RootApp'
             routes:
               - pathname: /subscriptions
               - pathname: /subscriptions/overview
+      bundleSegments:
+        - segmentId: subscriptions-dashboard-ui
+          bundleId: subscriptions
+          navItems:
+            - title: Overview
+              id: overview
+              href: "/subscriptions/overview"
+              icon: SubscriptionsIcon
+          position: 300
+
+      searchEntries:
+        - id: subscriptions-dashboard-ui
+          title: Subscriptions Dashboard
+          description: Dashboard for all of your cloud.redhat.com subscriptions
+          href: "/subscriptions/overview"
 
 parameters:
   - name: ENV_NAME
