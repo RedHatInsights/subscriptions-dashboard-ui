@@ -67,8 +67,12 @@ const SubscriptionPortfolio = () => {
             href="https://www.redhat.com/en/technologies/all-products"
             rel="noreferrer"
           >
-            <Button className="subscription-portfolio__button">
-              <PlusCircleIcon className="subscription-portfolio--image-size subscription-portfolio--icon-color" />
+            <Button
+              icon={
+                <PlusCircleIcon className="subscription-portfolio--image-size subscription-portfolio--icon-color" />
+              }
+              className="subscription-portfolio__button"
+            >
               <span>View all</span>
               <br />
               <span className="pf-u-pl-md pf-u-pr-md">Red Hat Products</span>

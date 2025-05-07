@@ -1,11 +1,10 @@
 import React from 'react';
 
 import {
+  Content,
+  ContentVariants,
   Stack,
   StackItem,
-  Text,
-  TextContent,
-  TextVariants,
 } from '@patternfly/react-core';
 
 import { Main } from '@redhat-cloud-services/frontend-components/Main';
@@ -25,15 +24,15 @@ const SubscriptionOverview = () => (
           <BodyComponent />
         </StackItem>
         <StackItem>
-          <TextContent>
-            <Text component={TextVariants.h2}>
+          <Content>
+            <Content component={ContentVariants.h2}>
               Build your subscription portfolio
-            </Text>
-            <Text>
+            </Content>
+            <Content component="p">
               Buy subscriptions for your workloads. We give you data that drives
               your decisions.
-            </Text>
-          </TextContent>
+            </Content>
+          </Content>
         </StackItem>
         <StackItem>
           <SubscriptionPortfolio />
