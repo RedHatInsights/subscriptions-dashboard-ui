@@ -2,14 +2,10 @@ import React from 'react';
 import {
   Card,
   CardBody,
+  Content,
+  ContentVariants,
   Flex,
   FlexItem,
-  Text,
-  TextContent,
-  TextList,
-  TextListItem,
-  TextListVariants,
-  TextVariants,
 } from '@patternfly/react-core';
 import './Overview.scss';
 import ExternalLinkAltIcon from '@patternfly/react-icons/dist/js/icons/external-link-alt-icon';
@@ -24,26 +20,29 @@ const BodyComponent = () => {
       >
         <FlexItem className="body-component--flex-item">
           <CardBody>
-            <TextContent>
-              <Text component={TextVariants.h2}>
+            <Content>
+              <Content component={ContentVariants.h2}>
                 See all your subscriptions
-              </Text>
-            </TextContent>
+              </Content>
+            </Content>
           </CardBody>
           <CardBody className="pf-u-pb-xs pf-u-mb-xs">
-            <TextContent>
-              <Text component={TextVariants.h3}>
+            <Content>
+              <Content component={ContentVariants.h3}>
                 Register your RHEL systems
-              </Text>
-              <Text
+              </Content>
+              <Content
                 className="pf-u-pb-xs pf-u-mb-xs"
-                component={TextVariants.p}
+                component={ContentVariants.p}
               >
                 Get the full value of your RHEL subscriptions, including updates
                 and security patches, through registration.
-              </Text>
-              <TextList component={TextListVariants.ul}>
-                <TextListItem className="body-component--text-list-margins">
+              </Content>
+              <Content component={ContentVariants.ul}>
+                <Content
+                  component="li"
+                  className="body-component--text-list-margins"
+                >
                   For a guided registration experience, try the{' '}
                   <a
                     target="_blank"
@@ -53,8 +52,8 @@ const BodyComponent = () => {
                     {' '}
                     Registration Assistant <ExternalLinkAltIcon />
                   </a>
-                </TextListItem>
-                <TextListItem>
+                </Content>
+                <Content component="li">
                   Review registration alternatives and select the best option
                   for your workflow.{' '}
                   <a
@@ -65,16 +64,16 @@ const BodyComponent = () => {
                     {' '}
                     Learn more <ExternalLinkAltIcon />
                   </a>
-                </TextListItem>
-              </TextList>
-            </TextContent>
+                </Content>
+              </Content>
+            </Content>
           </CardBody>
           <CardBody className="body-component--flex-item body-component--text-list-margins">
-            <TextContent>
-              <Text component={TextVariants.h3}>
+            <Content>
+              <Content component={ContentVariants.h3}>
                 Activate Subscriptions Usage
-              </Text>
-              <Text component={TextVariants.p}>
+              </Content>
+              <Content component={ContentVariants.p}>
                 Gain visibility into the usage of your subscriptions against
                 your total capacity over time. Opt in to Subscriptions Usage
                 today! &nbsp;
@@ -85,13 +84,15 @@ const BodyComponent = () => {
                 >
                   Learn more <ExternalLinkAltIcon />
                 </a>
-              </Text>
-            </TextContent>
+              </Content>
+            </Content>
           </CardBody>
           <CardBody className="body-component--flex-item pf-u-pt-md">
-            <TextContent>
-              <Text component={TextVariants.h3}>Get the right usage data</Text>
-              <Text component={TextVariants.p}>
+            <Content>
+              <Content component={ContentVariants.h3}>
+                Get the right usage data
+              </Content>
+              <Content component={ContentVariants.p}>
                 Account-wide usage reporting relies on multiple data streams to
                 power Subscriptions Usage. Make sure that the right data is
                 flowing for accurate reporting. &nbsp;
@@ -102,8 +103,8 @@ const BodyComponent = () => {
                 >
                   Learn more <ExternalLinkAltIcon />
                 </a>
-              </Text>
-            </TextContent>
+              </Content>
+            </Content>
           </CardBody>
         </FlexItem>
         <FlexItem className="body-component--image">

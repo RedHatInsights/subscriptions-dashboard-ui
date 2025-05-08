@@ -6,9 +6,8 @@ import {
   AccordionToggle,
   Card,
   CardBody,
-  Text,
-  TextContent,
-  TextVariants,
+  Content,
+  ContentVariants,
 } from '@patternfly/react-core';
 import './Overview.scss';
 import ExternalLinkAltIcon from '@patternfly/react-icons/dist/js/icons/external-link-alt-icon';
@@ -28,26 +27,22 @@ const Dropdown = () => {
   return (
     <Card>
       <CardBody>
-        <TextContent>
-          <Text component={TextVariants.h2}>Have more questions?</Text>
-        </TextContent>
+        <Content>
+          <Content component={ContentVariants.h2}>Have more questions?</Content>
+        </Content>
       </CardBody>
       <div className="pf-u-pr-lg pf-u-pb-lg">
         <Accordion isBordered>
-          <AccordionItem>
+          <AccordionItem isExpanded={expanded === 'bordered-toggle1'}>
             <AccordionToggle
               onClick={() => {
                 onToggle('bordered-toggle1');
               }}
-              isExpanded={expanded === 'bordered-toggle1'}
               id="bordered-toggle1"
             >
               How can I see all my subscriptions?
             </AccordionToggle>
-            <AccordionContent
-              id="bordered-expand1"
-              isHidden={expanded !== 'bordered-toggle1'}
-            >
+            <AccordionContent id="bordered-expand1">
               <p>
                 View details and status information for each of your
                 subscriptions with{' '}
@@ -59,20 +54,16 @@ const Dropdown = () => {
             </AccordionContent>
           </AccordionItem>
 
-          <AccordionItem>
+          <AccordionItem isExpanded={expanded === 'bordered-toggle2'}>
             <AccordionToggle
               onClick={() => {
                 onToggle('bordered-toggle2');
               }}
-              isExpanded={expanded === 'bordered-toggle2'}
               id="bordered-toggle2"
             >
               What is a manifest?
             </AccordionToggle>
-            <AccordionContent
-              id="bordered-expand2"
-              isHidden={expanded !== 'bordered-toggle2'}
-            >
+            <AccordionContent id="bordered-expand2">
               <p>
                 A manifest is a set of encrypted files that contains
                 subscription information that is used to import your
@@ -101,20 +92,16 @@ const Dropdown = () => {
             </AccordionContent>
           </AccordionItem>
 
-          <AccordionItem>
+          <AccordionItem isExpanded={expanded === 'bordered-toggle3'}>
             <AccordionToggle
               onClick={() => {
                 onToggle('bordered-toggle3');
               }}
-              isExpanded={expanded === 'bordered-toggle3'}
               id="bordered-toggle3"
             >
               How is Subscriptions Usage counting the usage of my subscriptions?
             </AccordionToggle>
-            <AccordionContent
-              id="bordered-expand3"
-              isHidden={expanded !== 'bordered-toggle3'}
-            >
+            <AccordionContent id="bordered-expand3">
               <p>
                 The purchase terms for a subscription determine how usage is
                 counted. These terms include a quantity and unit of measurement.
@@ -132,20 +119,16 @@ const Dropdown = () => {
             </AccordionContent>
           </AccordionItem>
 
-          <AccordionItem>
+          <AccordionItem isExpanded={expanded === 'bordered-toggle4'}>
             <AccordionToggle
               onClick={() => {
                 onToggle('bordered-toggle4');
               }}
-              isExpanded={expanded === 'bordered-toggle4'}
               id="bordered-toggle4"
             >
               How do I prepare to manage my RHEL subscriptions?
             </AccordionToggle>
-            <AccordionContent
-              id="bordered-expand4"
-              isHidden={expanded !== 'bordered-toggle4'}
-            >
+            <AccordionContent id="bordered-expand4">
               <p>
                 Discover the processes and tools that are used to manage your
                 RHEL subscriptions.{' '}
