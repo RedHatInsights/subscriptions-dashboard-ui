@@ -71,7 +71,7 @@ const SubscriptionPortfolio = () => {
               icon={
                 <PlusCircleIcon className="subscription-portfolio--image-size subscription-portfolio--icon-color" />
               }
-              className="subscription-portfolio__button"
+              className="subscription-portfolio__button subscription-portfolio__custom_button"
             >
               <span>View all</span>
               <br />
