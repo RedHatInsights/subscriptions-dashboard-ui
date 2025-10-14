@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   Card,
   CardBody,
@@ -6,17 +6,17 @@ import {
   ContentVariants,
   Flex,
   FlexItem,
-} from '@patternfly/react-core';
-import './Overview.scss';
-import ExternalLinkAltIcon from '@patternfly/react-icons/dist/js/icons/external-link-alt-icon';
-import SubsIcon from '../../static/images/subscriptionView.svg';
+} from "@patternfly/react-core";
+import "./Overview.scss";
+import ExternalLinkAltIcon from "@patternfly/react-icons/dist/js/icons/external-link-alt-icon";
+import SubsIcon from "../../static/images/subscriptionView.svg";
 
 const BodyComponent = () => {
   return (
     <Card>
       <Flex
         className="body-component__flex"
-        display={{ default: 'inlineFlex' }}
+        display={{ default: "inlineFlex" }}
       >
         <FlexItem className="body-component--flex-item">
           <CardBody>
@@ -43,25 +43,25 @@ const BodyComponent = () => {
                   component="li"
                   className="body-component--text-list-margins"
                 >
-                  For a guided registration experience, try the{' '}
+                  For a guided registration experience, try the{" "}
                   <a
                     target="_blank"
                     href="https://access.redhat.com/labs/registrationassistant/"
                     rel="noreferrer"
                   >
-                    {' '}
+                    {" "}
                     Registration Assistant <ExternalLinkAltIcon />
                   </a>
                 </Content>
                 <Content component="li">
                   Review registration alternatives and select the best option
-                  for your workflow.{' '}
+                  for your workflow.{" "}
                   <a
                     target="_blank"
-                    href="https://access.redhat.com/documentation/en-us/subscription_central/2023/html-single/getting_started_with_rhel_system_registration/index"
+                    href="https://docs.redhat.com/en/documentation/subscription_central/1-latest/html/getting_started_with_rhel_system_registration/index"
                     rel="noreferrer"
                   >
-                    {' '}
+                    {" "}
                     Learn more <ExternalLinkAltIcon />
                   </a>
                 </Content>
@@ -79,7 +79,7 @@ const BodyComponent = () => {
                 today! &nbsp;
                 <a
                   target="_blank"
-                  href="https://access.redhat.com/documentation/en-us/subscription_central/2023/html-single/getting_started_with_the_subscriptions_service/index#assembly-activating-opening-subscriptionwatch"
+                  href="https://docs.redhat.com/en/documentation/subscription_central/1-latest/html/getting_started_with_the_subscriptions_service/assembly-activating-opening-subscriptionwatch"
                   rel="noreferrer"
                 >
                   Learn more <ExternalLinkAltIcon />
@@ -98,7 +98,7 @@ const BodyComponent = () => {
                 flowing for accurate reporting. &nbsp;
                 <a
                   target="_blank"
-                  href="https://access.redhat.com/documentation/en-us/subscription_central/2023/html-single/getting_started_with_the_subscriptions_service/index#assembly-setting-up-subscriptionwatch"
+                  href="https://docs.redhat.com/en/documentation/subscription_central/1-latest/html/getting_started_with_the_subscriptions_service/assembly-setting-up-subscriptionwatch"
                   rel="noreferrer"
                 >
                   Learn more <ExternalLinkAltIcon />
