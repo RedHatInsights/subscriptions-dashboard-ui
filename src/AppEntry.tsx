@@ -8,7 +8,7 @@ import { Middleware } from 'redux';
 const AppEntry = () => (
   <Provider
     store={init(
-      ...(process.env.NODE_ENV !== 'production' ? [logger as Middleware] : [])
+      ...(process.env.NODE_ENV !== 'production' ? [logger as Middleware] : []),
     ).getStore()}
   >
     <App />
