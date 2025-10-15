@@ -72,7 +72,7 @@ const Dropdown = () => {
                 Learn more about using manifests with the{' '}
                 <a
                   target="_blank"
-                  href="https://access.redhat.com/documentation/en-us/subscription_central/2023/html-single/creating_and_managing_manifests_for_a_connected_satellite_server/index#doc-wrapper"
+                  href="https://docs.redhat.com/en/documentation/subscription_central/1-latest/html/creating_and_managing_manifests_for_a_connected_satellite_server/index"
                   rel="noreferrer"
                 >
                   {' '}
@@ -81,7 +81,7 @@ const Dropdown = () => {
                 &nbsp;and{' '}
                 <a
                   target="_blank"
-                  href="https://access.redhat.com/documentation/en-us/red_hat_subscription_management/2023/html-single/using_red_hat_subscription_management/index#using_manifests_con"
+                  href="https://docs.redhat.com/en/documentation/subscription_central/1-latest/html/creating_and_managing_manifests_for_a_disconnected_satellite_server/index"
                   rel="noreferrer"
                 >
                   {' '}
@@ -109,7 +109,7 @@ const Dropdown = () => {
                 counting varies across products.{' '}
                 <a
                   target="_blank"
-                  href="https://access.redhat.com/documentation/en-us/subscription_central/2023/html-single/getting_started_with_the_subscriptions_service/index#assembly-using-subscriptionwatch-data"
+                  href="https://docs.redhat.com/en/documentation/subscription_central/1-latest/html/getting_started_with_the_subscriptions_service/assembly-using-subscriptionwatch-data"
                   rel="noreferrer"
                 >
                   {' '}
@@ -134,7 +134,7 @@ const Dropdown = () => {
                 RHEL subscriptions.{' '}
                 <a
                   target="_blank"
-                  href="https://access.redhat.com/documentation/en-us/subscription_central/2023/html-single/getting_started_with_rhel_system_registration/index"
+                  href="https://docs.redhat.com/en/documentation/subscription_central/1-latest/html/getting_started_with_rhel_system_registration/index"
                   rel="noreferrer"
                 >
                   {' '}

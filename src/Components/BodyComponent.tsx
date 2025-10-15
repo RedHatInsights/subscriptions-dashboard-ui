@@ -10,6 +10,7 @@ import {
 import './Overview.scss';
 import ExternalLinkAltIcon from '@patternfly/react-icons/dist/js/icons/external-link-alt-icon';
 import SubsIcon from '../../static/images/subscriptionView.svg';
+import { Link } from 'react-router-dom';
 
 const BodyComponent = () => {
   return (
@@ -44,21 +45,21 @@ const BodyComponent = () => {
                   className="body-component--text-list-margins"
                 >
                   For a guided registration experience, try the{' '}
-                  <a
+                  <Link
                     target="_blank"
-                    href="https://access.redhat.com/labs/registrationassistant/"
+                    to="/insights/registration"
                     rel="noreferrer"
                   >
                     {' '}
                     Registration Assistant <ExternalLinkAltIcon />
-                  </a>
+                  </Link>
                 </Content>
                 <Content component="li">
                   Review registration alternatives and select the best option
                   for your workflow.{' '}
                   <a
                     target="_blank"
-                    href="https://access.redhat.com/documentation/en-us/subscription_central/2023/html-single/getting_started_with_rhel_system_registration/index"
+                    href="https://docs.redhat.com/en/documentation/subscription_central/1-latest/html/getting_started_with_rhel_system_registration/index"
                     rel="noreferrer"
                   >
                     {' '}
@@ -79,7 +80,7 @@ const BodyComponent = () => {
                 today! &nbsp;
                 <a
                   target="_blank"
-                  href="https://access.redhat.com/documentation/en-us/subscription_central/2023/html-single/getting_started_with_the_subscriptions_service/index#assembly-activating-opening-subscriptionwatch"
+                  href="https://docs.redhat.com/en/documentation/subscription_central/1-latest/html/getting_started_with_the_subscriptions_service/assembly-activating-opening-subscriptionwatch"
                   rel="noreferrer"
                 >
                   Learn more <ExternalLinkAltIcon />
@@ -98,7 +99,7 @@ const BodyComponent = () => {
                 flowing for accurate reporting. &nbsp;
                 <a
                   target="_blank"
-                  href="https://access.redhat.com/documentation/en-us/subscription_central/2023/html-single/getting_started_with_the_subscriptions_service/index#assembly-setting-up-subscriptionwatch"
+                  href="https://docs.redhat.com/en/documentation/subscription_central/1-latest/html/getting_started_with_the_subscriptions_service/assembly-setting-up-subscriptionwatch"
                   rel="noreferrer"
                 >
                   Learn more <ExternalLinkAltIcon />
