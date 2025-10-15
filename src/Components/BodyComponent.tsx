@@ -10,6 +10,7 @@ import {
 import './Overview.scss';
 import ExternalLinkAltIcon from '@patternfly/react-icons/dist/js/icons/external-link-alt-icon';
 import SubsIcon from '../../static/images/subscriptionView.svg';
+import { Link } from 'react-router-dom';
 
 const BodyComponent = () => {
   return (
@@ -44,14 +45,14 @@ const BodyComponent = () => {
                   className="body-component--text-list-margins"
                 >
                   For a guided registration experience, try the{' '}
-                  <a
+                  <Link
                     target="_blank"
-                    href="https://access.redhat.com/labs/registrationassistant/"
+                    to="/insights/registration"
                     rel="noreferrer"
                   >
                     {' '}
                     Registration Assistant <ExternalLinkAltIcon />
-                  </a>
+                  </Link>
                 </Content>
                 <Content component="li">
                   Review registration alternatives and select the best option
