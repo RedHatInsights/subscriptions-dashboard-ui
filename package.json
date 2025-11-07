@@ -55,7 +55,7 @@
     "identity-obj-proxy": "3.0.0",
     "jest": "27.5.1",
     "npm-run-all2": "^5.0.0",
-    "prop-types": "15.7.2",
+    "prop-types": "15.8.1",
     "react-refresh": "^0.18.0",
     "rimraf": "^3.0.2",
     "ts-patch": "^3.0.2",
