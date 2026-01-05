@@ -54,7 +54,7 @@
     "eslint": "^9.0.0",
     "identity-obj-proxy": "3.0.0",
     "jest": "27.5.1",
-    "npm-run-all2": "^5.0.0",
+    "npm-run-all2": "^8.0.0",
     "prop-types": "15.8.1",
     "react-refresh": "^0.18.0",
     "rimraf": "^3.0.2",
