@@ -5,7 +5,8 @@
   },
   "npm": {
     "enabled": true,
-    "schedule": ["* * 1 * *"]
+    "schedule": ["* * 1 * *"],
+    "automergeSchedule": ["* * * * *"]
   },
   "lockFileMaintenance": {
     "enabled": true,
@@ -19,5 +20,6 @@
       "matchManagers": ["tekton", "npm"],
       "automerge": true
     }
-  ]
+  ],
+  "labels": ["dependency", "konflux"]
 }
