@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   Card,
   CardBody,
@@ -6,18 +6,18 @@ import {
   ContentVariants,
   Flex,
   FlexItem,
-} from "@patternfly/react-core";
-import "./Overview.scss";
-import ExternalLinkAltIcon from "@patternfly/react-icons/dist/js/icons/external-link-alt-icon";
-import SubsIcon from "../../static/images/subscriptionView.svg";
-import { Link } from "react-router-dom";
+} from '@patternfly/react-core';
+import './Overview.scss';
+import ExternalLinkAltIcon from '@patternfly/react-icons/dist/js/icons/external-link-alt-icon';
+import SubsIcon from '../../static/images/subscriptionView.svg';
+import { Link } from 'react-router-dom';
 
 const BodyComponent = () => {
   return (
     <Card>
       <Flex
         className="body-component__flex"
-        display={{ default: "inlineFlex" }}
+        display={{ default: 'inlineFlex' }}
       >
         <FlexItem className="body-component--flex-item">
           <CardBody>
@@ -44,25 +44,25 @@ const BodyComponent = () => {
                   component="li"
                   className="body-component--text-list-margins"
                 >
-                  For a guided registration experience, try the{" "}
+                  For a guided registration experience, try the{' '}
                   <Link
                     target="_blank"
                     to="/insights/registration"
                     rel="noreferrer"
                   >
-                    {" "}
+                    {' '}
                     Registration Assistant <ExternalLinkAltIcon />
                   </Link>
                 </Content>
                 <Content component="li">
                   Review registration alternatives and select the best option
-                  for your workflow.{" "}
+                  for your workflow.{' '}
                   <a
                     target="_blank"
                     href="https://docs.redhat.com/en/documentation/subscription_central/1-latest/html/getting_started_with_rhel_system_registration/index"
                     rel="noreferrer"
                   >
-                    {" "}
+                    {' '}
                     Learn more <ExternalLinkAltIcon />
                   </a>
                 </Content>
