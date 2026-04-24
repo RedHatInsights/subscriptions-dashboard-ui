@@ -80,7 +80,7 @@ const BodyComponent = () => {
                 today! &nbsp;
                 <a
                   target="_blank"
-                  href="https://docs.redhat.com/en/documentation/subscription_central/1-latest/html/getting_started_with_the_subscriptions_service/assembly-activating-opening-subscriptionwatch"
+                  href="https://docs.redhat.com/en/documentation/subscription_central/1-latest/html/getting_started_with_the_subscriptions_service/assembly-activating-opening-subscriptionwatch_assembly-setting-up-subscriptionwatch"
                   rel="noreferrer"
                 >
                   Learn more <ExternalLinkAltIcon />
@@ -99,7 +99,7 @@ const BodyComponent = () => {
                 flowing for accurate reporting. &nbsp;
                 <a
                   target="_blank"
-                  href="https://docs.redhat.com/en/documentation/subscription_central/1-latest/html/getting_started_with_the_subscriptions_service/assembly-setting-up-subscriptionwatch"
+                  href="https://docs.redhat.com/en/documentation/subscription_central/1-latest/html/getting_started_with_the_subscriptions_service/assembly-setting-up-subscriptionwatch_assembly-requirements-and-your-responsibilities"
                   rel="noreferrer"
                 >
                   Learn more <ExternalLinkAltIcon />
