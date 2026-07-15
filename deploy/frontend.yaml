@@ -47,7 +47,7 @@ objects:
           href: "/subscriptions/overview"
 
       serviceTiles:
-        - id: manifests
+        - id: subscriptions-dashboard-ui
           section: subscriptions
           group: subscriptions
           title: Subscription Dashboard
