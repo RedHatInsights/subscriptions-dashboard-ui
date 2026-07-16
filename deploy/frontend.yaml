@@ -46,6 +46,15 @@ objects:
           description: Dashboard for all of your cloud.redhat.com subscriptions
           href: "/subscriptions/overview"
 
+      serviceTiles:
+        - id: subscriptions-dashboard-ui
+          section: subscriptions
+          group: subscriptions
+          title: Subscription Dashboard
+          href: /subscriptions/overview
+          description: Dashboard for all of your cloud.redhat.com subscriptions
+          icon: SubscriptionsIcon
+
 parameters:
   - name: ENV_NAME
     required: true
