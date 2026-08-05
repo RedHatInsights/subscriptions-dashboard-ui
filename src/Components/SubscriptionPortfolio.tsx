@@ -7,15 +7,7 @@ import RHELIcon from '../../static/images/rhel.svg';
 import OpenShiftIcon from '../../static/images/openshift.svg';
 import AnsibleIcon from '../../static/images/ansible.svg';
 
-const PortfolioCard = ({
-  href,
-  src,
-  product,
-}: {
-  product: string;
-  src: string;
-  href: string;
-}) => (
+const PortfolioCard = ({ href, src, product }: { product: string; src: string; href: string }) => (
   <FlexItem flex={{ default: 'flex_1' }}>
     <Card className="subscription-portfolio__card">
       <a
@@ -37,10 +29,7 @@ const PortfolioCard = ({
 
 const SubscriptionPortfolio = () => {
   return (
-    <Flex
-      display={{ default: 'inlineFlex' }}
-      className="subscription-portfolio--flex"
-    >
+    <Flex display={{ default: 'inlineFlex' }} className="subscription-portfolio--flex">
       <PortfolioCard
         href="https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux"
         src={RHELIcon}
@@ -56,10 +45,7 @@ const SubscriptionPortfolio = () => {
         src={AnsibleIcon}
         product="Ansible Automation Platform"
       />
-      <FlexItem
-        flex={{ default: 'flex_1' }}
-        className="subscription-card-margin"
-      >
+      <FlexItem flex={{ default: 'flex_1' }} className="subscription-card-margin">
         <Card className="subscription-portfolio__card">
           <a
             className="subscription-portfolio__card-padding"

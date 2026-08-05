@@ -7,7 +7,7 @@ import {
   Card,
   CardBody,
   Content,
-  ContentVariants,
+  ContentVariants
 } from '@patternfly/react-core';
 import './Overview.scss';
 import ExternalLinkAltIcon from '@patternfly/react-icons/dist/js/icons/external-link-alt-icon';
@@ -44,12 +44,8 @@ const Dropdown = () => {
             </AccordionToggle>
             <AccordionContent id="bordered-expand1">
               <p>
-                View details and status information for each of your
-                subscriptions with{' '}
-                <Link to={pathname.replace('overview', 'inventory')}>
-                  Subscriptions Inventory
-                </Link>
-                .
+                View details and status information for each of your subscriptions with{' '}
+                <Link to={pathname.replace('overview', 'inventory')}>Subscriptions Inventory</Link>.
               </p>
             </AccordionContent>
           </AccordionItem>
@@ -65,11 +61,10 @@ const Dropdown = () => {
             </AccordionToggle>
             <AccordionContent id="bordered-expand2">
               <p>
-                A manifest is a set of encrypted files that contains
-                subscription information that is used to import your
-                subscriptions into Satellite. After the manifest is imported,
-                you can use it to manage RHEL systems and synchronize content.
-                Learn more about using manifests with the{' '}
+                A manifest is a set of encrypted files that contains subscription information that
+                is used to import your subscriptions into Satellite. After the manifest is imported,
+                you can use it to manage RHEL systems and synchronize content. Learn more about
+                using manifests with the{' '}
                 <a
                   target="_blank"
                   href="https://docs.redhat.com/en/documentation/subscription_central/1-latest/html/creating_and_managing_manifests_for_a_connected_satellite_server/index"
@@ -103,10 +98,9 @@ const Dropdown = () => {
             </AccordionToggle>
             <AccordionContent id="bordered-expand3">
               <p>
-                The purchase terms for a subscription determine how usage is
-                counted. These terms include a quantity and unit of measurement.
-                Different subscriptions are sold with different terms, so usage
-                counting varies across products.{' '}
+                The purchase terms for a subscription determine how usage is counted. These terms
+                include a quantity and unit of measurement. Different subscriptions are sold with
+                different terms, so usage counting varies across products.{' '}
                 <a
                   target="_blank"
                   href="https://docs.redhat.com/en/documentation/subscription_central/1-latest/html/getting_started_with_the_subscriptions_service/assembly-using-subscriptionwatch-data"
@@ -130,8 +124,7 @@ const Dropdown = () => {
             </AccordionToggle>
             <AccordionContent id="bordered-expand4">
               <p>
-                Discover the processes and tools that are used to manage your
-                RHEL subscriptions.{' '}
+                Discover the processes and tools that are used to manage your RHEL subscriptions.{' '}
                 <a
                   target="_blank"
                   href="https://docs.redhat.com/en/documentation/subscription_central/1-latest/html/getting_started_with_rhel_system_registration/index"

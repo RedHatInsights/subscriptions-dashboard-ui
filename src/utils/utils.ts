@@ -9,6 +9,6 @@ export const mergeToBasename = (to: To, basename: string): To => {
 
   return {
     ...to,
-    pathname: `${basename}/${to.pathname}`.replace(`^${basename}//`, '/'),
+    pathname: `${basename}/${to.pathname}`.replace(`^${basename}//`, '/')
   };
 };
