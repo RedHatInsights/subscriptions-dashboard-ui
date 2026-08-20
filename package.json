@@ -47,7 +47,7 @@
     "identity-obj-proxy": "3.0.0",
     "jest": "30.4.2",
     "jest-environment-jsdom": "^30.2.0",
-    "npm-run-all2": "^8.0.0",
+    "npm-run-all2": "^9.0.0",
     "rimraf": "^6.0.0",
     "ts-patch": "^4.0.0",
     "typescript": "^5.5.4",
